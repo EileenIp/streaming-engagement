@@ -1,0 +1,111 @@
+{
+  "data/raw/engagement/engagement_2023H2.xlsx": {
+    "source": "netflix_engagement",
+    "url": "https://assets.ctfassets.net/4cd45et68cgf/inuAnzotdsAEgbInGLzH5/1be323ba419b2af3a96bffa29acc31a3/What_We_Watched_A_Netflix_Engagement_Report_2023Jul-Dec.xlsx",
+    "downloaded_at": "2026-09-17T00:16:04+00:00",
+    "bytes": 881985,
+    "sha256": "ea536b6e1f3771ba662e57a72ab847efd0200b3e4adb93a2f7d3e2b133f5b655",
+    "period": "2023H2",
+    "page": "https://about.netflix.com/en/news/what-we-watched-the-second-half-of-2023"
+  },
+  "data/raw/engagement/engagement_2024H1.xlsx": {
+    "source": "netflix_engagement",
+    "url": "https://assets.ctfassets.net/4cd45et68cgf/2PoZlfdc46dH2gQvI8eUzI/9db5840720c47acfcf7b89ffe2402860/What_We_Watched_A_Netflix_Engagement_Report_2024Jan-Jun.xlsx",
+    "downloaded_at": "2026-09-17T00:16:06+00:00",
+    "bytes": 896503,
+    "sha256": "2803512229889f91b51c214b9494b7a55799767d63e3f5cf2c142b1917a18d62",
+    "period": "2024H1",
+    "page": "https://about.netflix.com/en/news/what-we-watched-the-first-half-of-2024"
+  },
+  "data/raw/engagement/engagement_2024H2.xlsx": {
+    "source": "netflix_engagement",
+    "url": "https://assets.ctfassets.net/4cd45et68cgf/6XSmoEjBjVMPRtYybT9d1E/8c0b0b2645b8712d5597b0bdbe0d64e2/What_We_Watched_A_Netflix_Engagement_Report_2024Jul-Dec.xlsx",
+    "downloaded_at": "2026-09-17T00:16:09+00:00",
+    "bytes": 872691,
+    "sha256": "3030e3630fb0ff90d8d84b9cda3c22c83f4e9e356d4f1742bda729bfa2fc738c",
+    "period": "2024H2",
+    "page": "https://about.netflix.com/en/news/what-we-watched-the-second-half-of-2024"
+  },
+  "data/raw/engagement/engagement_2025H1.xlsx": {
+    "source": "netflix_engagement",
+    "url": "https://assets.ctfassets.net/4cd45et68cgf/mplcXj5ulHDfbCPCr0f0I/5dbb6ec09f03df89706476e380e9b8bd/What_We_Watched_A_Netflix_Engagement_Report_2025Jan-Jun.xlsx",
+    "downloaded_at": "2026-09-17T00:16:11+00:00",
+    "bytes": 913605,
+    "sha256": "7208fc0207818f961652748d19500221b1d3edce8999b83e0f954f27fb31e8dd",
+    "period": "2025H1",
+    "page": "https://about.netflix.com/en/news/what-we-watched-the-first-half-of-2025"
+  },
+  "data/raw/engagement/engagement_2025H2.xlsx": {
+    "source": "netflix_engagement",
+    "url": "https://assets.ctfassets.net/4cd45et68cgf/2vdDPGLKA0XX2cjF2APJFn/7f1c367b39ed73a6a588751d3c5d0252/What_We_Watched_A_Netflix_Engagement_Report_2025Jul-Dec__6_.xlsx",
+    "downloaded_at": "2026-09-17T00:16:12+00:00",
+    "bytes": 931483,
+    "sha256": "a06b0f510264336ad31f29a0ed4aaa51247374dcaa8aee780bbecf50227635cb",
+    "period": "2025H2",
+    "page": "https://about.netflix.com/en/news/what-we-watched-the-second-half-of-2025"
+  },
+  "data/raw/engagement/engagement_2026H1.xlsx": {
+    "source": "netflix_engagement",
+    "url": "https://assets.ctfassets.net/4cd45et68cgf/40WGcHJa9vRua31kU6Gbz5/43b15c7fbd6924392fc80e885839e39f/Netflix-s_What_We_Watched_Report_2026Jan-Jun__1_.xlsx",
+    "downloaded_at": "2026-09-17T00:16:14+00:00",
+    "bytes": 988392,
+    "sha256": "bcfda87e87d09d923472a1e1b30d5c7c799457aacba41310a9d223e834fe2f5f",
+    "period": "2026H1",
+    "page": "https://about.netflix.com/en/news/what-we-watched-the-first-half-of-2026"
+  },
+  "data/raw/imdb/title.akas.tsv.gz": {
+    "source": "imdb",
+    "url": "https://datasets.imdbws.com/title.akas.tsv.gz",
+    "downloaded_at": "2026-09-17T00:20:49+00:00",
+    "bytes": 513921320,
+    "sha256": "03932433b30a2be10c493f21fc9c64f16944503b91a91095c151ba0836ac1c39",
+    "last_modified": "Wed, 16 Sep 2026 12:37:34 GMT"
+  },
+  "data/raw/imdb/title.basics.tsv.gz": {
+    "source": "imdb",
+    "url": "https://datasets.imdbws.com/title.basics.tsv.gz",
+    "downloaded_at": "2026-09-17T00:20:36+00:00",
+    "bytes": 227144340,
+    "sha256": "a8179d1ddd97bac5adacf61f93d6897d03a7f793803a05163868baf4e5c5f45e",
+    "last_modified": "Wed, 16 Sep 2026 12:36:41 GMT"
+  },
+  "data/raw/imdb/title.episode.tsv.gz": {
+    "source": "imdb",
+    "url": "https://datasets.imdbws.com/title.episode.tsv.gz",
+    "downloaded_at": "2026-09-17T00:20:51+00:00",
+    "bytes": 54668437,
+    "sha256": "73100648ab5c203841245c3b6c7d3416d3a671e32d4f03bbf7de5ecdb75ebe23",
+    "last_modified": "Wed, 16 Sep 2026 12:37:02 GMT"
+  },
+  "data/raw/imdb/title.ratings.tsv.gz": {
+    "source": "imdb",
+    "url": "https://datasets.imdbws.com/title.ratings.tsv.gz",
+    "downloaded_at": "2026-09-17T00:20:37+00:00",
+    "bytes": 8638977,
+    "sha256": "d3b336ec83f508bedf54178778481a4d391d9011f75543dcf744b2b0f22f82b3",
+    "last_modified": "Wed, 16 Sep 2026 12:39:11 GMT"
+  },
+  "data/raw/top10/all-weeks-global.tsv": {
+    "source": "netflix_top10",
+    "url": "https://www.netflix.com/tudum/top10/data/all-weeks-global.tsv",
+    "downloaded_at": "2026-09-17T00:20:01+00:00",
+    "bytes": 893380,
+    "sha256": "69cfb7394dbd9b3d02fac65e2b3eb5af005765d372e64a17491c9b2f03681a19",
+    "last_modified": "Tue, 15 Sep 2026 18:54:23 GMT"
+  },
+  "data/raw/wikipedia/pageviews/Wednesday_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Wednesday_%28TV_series%29/daily/20230601/20260630",
+    "downloaded_at": "2026-09-17T00:21:04+00:00",
+    "bytes": 193935,
+    "sha256": "0f3f5132d3af0acc1fb2ca3d7ce205ae6cf51f1555e5e7da94c96e6427d3aa60"
+  },
+  "data/raw/wikipedia/wikidata/imdb_tt13443470_tt13443470.json": {
+    "source": "wikidata",
+    "url": "https://query.wikidata.org/sparql",
+    "downloaded_at": "2026-09-17T00:21:02+00:00",
+    "bytes": 341,
+    "sha256": "376f441f5d8d7de4e87b36f7078914515cd0af49e50c2054549506f5ac2660d7",
+    "imdb_ids": 1
+  }
+}
