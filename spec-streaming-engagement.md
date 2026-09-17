@@ -23,7 +23,7 @@ This is the part that makes the project honest rather than invented: all four ar
 1. **Netflix Engagement Report** — Netflix publishes a report of what members watched: hours viewed and views per title, published as an Excel download covering six-month periods. Messy in real ways: titles as free text, seasons inconsistently named, multi-language titles.
 2. **Netflix Global Top 10 weekly files** — weekly ranked lists with hours viewed, downloadable as spreadsheets from the Top 10 site. Different title formatting from the engagement report, different granularity (weekly vs half-year).
 3. **IMDb non-commercial datasets** — official TSV dumps (`title.basics`, `title.ratings`, `title.akas`): ratings, vote counts, genres, year, alternate titles. Its own ID scheme (`tconst`), which nothing in sources 1–2 shares.
-4. **Google Trends** interest-over-time for the analysis titles (via `pytrends` or manual export) — demand signal outside the platform.
+4. ~~**Google Trends** interest-over-time for the analysis titles (via `pytrends` or manual export) — demand signal outside the platform.~~ **Replaced at Checkpoint 0 (2026-09-17) by Wikipedia pageviews** — daily absolute article views via the Wikimedia REST API, reached from IMDb IDs through Wikidata (P345). See `data/validation/checkpoint0-sources.md`.
 
 **AGENT, Phase 0:** verify each source's current availability and exact download mechanics before building anything (Netflix has changed report cadence before). Report actual file names, sizes, and column lists. **Checkpoint 0** — Eileen confirms the four sources or swaps one.
 

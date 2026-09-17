@@ -150,3 +150,14 @@ is involved at all. Some of the misses you can see straight away: bilingual
    2023 H1 would have to be split into TV and film by guessing from the title
    suffix, and it has hours only. Either way, the catch-all rows get excluded
    from anything title-level.
+
+---
+
+## Outcome — Eileen, 2026-09-17
+
+1. **Confirmed:** engagement report, Top 10 weekly, and IMDb `title.basics`,
+   `title.ratings`, `title.akas`, `title.episode`.
+2. **Google Trends swapped for Wikipedia pageviews.** English Wikipedia,
+   user-agent traffic only, with Wikidata's IMDb-ID property (P345) as the
+   route from IMDb ID to Wikipedia article.
+3. **Periods: 2023 H2 to 2026 H1**, six halves. 2023 H1 is out.
