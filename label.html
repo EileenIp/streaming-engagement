@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Streaming Engagement — title match audit</title>
+<style>
+  :root { color-scheme: light dark; --ink:#16181d; --paper:#fbfbfa; --line:#d8d6d1;
+          --card:#fff; --muted:#6b6f76; --accent:#2f5d8a; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#e8e6e3; --paper:#17191c; --line:#32363c; --card:#1e2125;
+            --muted:#9aa0a8; --accent:#7fa9d4; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink);
+         font:15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  header { position:sticky; top:0; background:var(--paper); border-bottom:1px solid var(--line);
+           padding:14px 20px; z-index:2; }
+  h1 { font-size:15px; margin:0 0 4px; font-weight:600; }
+  .sub { color:var(--muted); font-size:13px; }
+  .bar { height:4px; background:var(--line); border-radius:2px; margin-top:10px; overflow:hidden; }
+  .bar span { display:block; height:100%; background:var(--accent); width:0; transition:width .18s; }
+  main { max-width:720px; margin:0 auto; padding:22px 20px 140px; }
+  .pair { background:var(--card); border:1px solid var(--line); border-radius:10px;
+          padding:16px 18px; margin-bottom:16px; }
+  .n { color:var(--muted); font-size:12px; letter-spacing:.04em; text-transform:uppercase; }
+  .t { font-size:16px; margin:8px 0; word-wrap:break-word; }
+  .t b { font-weight:600; }
+  .src { color:var(--muted); font-size:12px; }
+  .btns { display:flex; gap:8px; flex-wrap:wrap; margin-top:12px; }
+  button { font:inherit; padding:7px 13px; border:1px solid var(--line); border-radius:7px;
+           background:transparent; color:var(--ink); cursor:pointer; }
+  button[aria-pressed="true"] { background:var(--accent); border-color:var(--accent); color:#fff; }
+  footer { position:fixed; bottom:0; left:0; right:0; background:var(--paper);
+           border-top:1px solid var(--line); padding:12px 20px; display:flex; gap:10px;
+           align-items:center; flex-wrap:wrap; }
+  .note { color:var(--muted); font-size:12px; max-width:720px; margin:0 auto 18px; }
+  textarea { width:100%; height:120px; font:12px/1.4 ui-monospace, monospace; margin-top:10px;
+             background:var(--card); color:var(--ink); border:1px solid var(--line); border-radius:7px; }
+</style>
+<header>
+  <h1>Do these two names mean the same title?</h1>
+  <div class="sub"><span id="done">0</span> of 30 answered</div>
+  <div class="bar"><span id="fill"></span></div>
+</header>
+<main>
+  <p class="note">One pair at a time: the left name comes from one Netflix or IMDb source,
+  the right from another. Answer <b>same</b> if they are the same title (the same season of
+  the same show, or the same film), <b>different</b> if they are not, and <b>can't tell</b>
+  if you would need to look it up. Nothing here tells you what the pipeline decided —
+  that is the point. Answers save as you go; export at any time.</p>
+  <div id="list"></div>
+  <textarea id="out" readonly></textarea>
+</main>
+<footer>
+  <button onclick="save()">Download answers</button>
+  <button onclick="copy()">Copy to clipboard</button>
+  <span class="src" id="status"></span>
+</footer>
+<script>
+const PAIRS = [{"id": "p00", "left": "1 Contra Todos: O Filme 3", "right": "todos contra leo", "left_source": "Netflix engagement report", "right_source": "IMDb"}, {"id": "p01", "left": "The Valley of a Thousand Hills", "right": "valley of a thousand hills", "left_source": "Netflix engagement report", "right_source": "IMDb"}, {"id": "p02", "left": "Project Mc²: Part 2", "right": "project mc²", "left_source": "Netflix engagement report", "right_source": "IMDb"}, {"id": "p03", "left": "The Grand Family: Season 1 // 華麗なる一族: シーズン1", "right": "the giant family", "left_source": "Netflix engagement report", "right_source": "IMDb"}, {"id": "p04", "left": "Ai Khai Dek Wat Chedi // ไอ้ไข่ เด็กวัดเจดีย์", "right": "ikai dek wat chedi", "left_source": "Netflix engagement report", "right_source": "IMDb"}, {"id": "p05", "left": "Barbie: A Mermaid Tale 2", "right": "barbie a mermaid tale", "left_source": "Netflix engagement report", "right_source": "IMDb"}, {"id": "p06", "left": "Bebefinn Playtime: 시즌 1", "right": "Bebefinn Playtime", "left_source": "Netflix Top 10", "right_source": "Netflix engagement report"}, {"id": "p07", "left": "Mega Game: Season 1 // Mega Game DinsiemE: Stagione 1", "right": "mega med", "left_source": "Netflix engagement report", "right_source": "IMDb"}, {"id": "p08", "left": "Anpanman: Shine! Kulun and the Stars of Life // 映画 それいけ! アンパンマン かがやけ! クルンといのちの星", "right": "anpanman shine kurun and the star of life", "left_source": "Netflix engagement report", "right_source": "IMDb"}, {"id": "p09", "left": "WWE Elimination Chamber: Elimination Chamber 2025", "right": "render s character elimination re eliminated", "left_source": "Netflix engagement report", "right_source": "IMDb"}, {"id": "p10", "left": "Bill Russell: Legend", "right": "lillian russell", "left_source": "Netflix engagement report", "right_source": "IMDb"}, {"id": "p11", "left": "Abu Sadaam // ابو صدام", "right": "abu saddam", "left_source": "Netflix engagement report", "right_source": "IMDb"}, {"id": "p12", "left": "Be-Bop Highschool: The Power // ビー・バップ・ハイスクール 高校与太郎完結篇", "right": "be bop high school", "left_source": "Netflix engagement report", "right_source": "IMDb"}, {"id": "p13", "left": "New Kongsuni and Friends: Season 1", "right": "kongsuni and friends", "left_source": "Netflix engagement report", "right_source": "IMDb"}, {"id": "p14", "left": "Game Over (Tamil Version) (2019)", "right": "still lives end version", "left_source": "Netflix engagement report", "right_source": "IMDb"}, {"id": "p15", "left": "Bleach The Movie: Fade to Black // 劇場版 BLEACH Fade to Black 君の名を呼ぶ", "right": "bleach fade to black", "left_source": "Netflix engagement report", "right_source": "IMDb"}, {"id": "p16", "left": "D.I.S.C.O.", "right": "D.I.S.C.O. (2026)", "left_source": "Netflix Top 10", "right_source": "Netflix engagement report"}, {"id": "p17", "left": "True Beauty: Limited Series", "right": "True Beauty: Limited Series // 여신강림: 리미티드 시리즈", "left_source": "Netflix Top 10", "right_source": "Netflix engagement report"}, {"id": "p18", "left": "Crayon Shin-chan the Movie: The Storm Called: The Adult Empire Strikes Back // 映画クレヨンしんちゃん 嵐を呼ぶ モーレツ! オトナ帝国の逆襲", "right": "crayon shin chan the storm called the adult empire strikes back", "left_source": "Netflix engagement report", "right_source": "IMDb"}, {"id": "p19", "left": "Reda's clock // ساعة رضا", "right": "redha s clock", "left_source": "Netflix engagement report", "right_source": "IMDb"}, {"id": "p20", "left": "Justice Monster: Season 1 // 絶対正義: シーズン1", "right": "gute monster", "left_source": "Netflix engagement report", "right_source": "IMDb"}, {"id": "p21", "left": "Bodies Special (2004)", "right": "ladies special", "left_source": "Netflix engagement report", "right_source": "IMDb"}, {"id": "p22", "left": "Family Pack", "right": "Family Pack // Loups-Garous", "left_source": "Netflix Top 10", "right_source": "Netflix engagement report"}, {"id": "p23", "left": "Phu Bao Thai Bahn E-Saan Juad // ผู้บ่าวไทบ้าน อีสานจ้วด", "right": "phu bao thai ban e san juad", "left_source": "Netflix engagement report", "right_source": "IMDb"}, {"id": "p24", "left": "Long D // 롱디", "right": "long day", "left_source": "Netflix engagement report", "right_source": "IMDb"}, {"id": "p25", "left": "Old Fashioned Cupcake: Season 1 // オールドファッションカップケーキ: シーズン1", "right": "old fashion cupcake", "left_source": "Netflix engagement report", "right_source": "IMDb"}, {"id": "p26", "left": "The Netflix Cup", "right": "the fa cup", "left_source": "Netflix engagement report", "right_source": "IMDb"}, {"id": "p27", "left": "Doctor (Tamil) (2021)", "right": "family doctor", "left_source": "Netflix engagement report", "right_source": "IMDb"}, {"id": "p28", "left": "Raw: February 2, 2026", "right": "Raw: February 2, 2026", "left_source": "Netflix Top 10", "right_source": "Netflix engagement report"}, {"id": "p29", "left": "Shabaash Mithu (Hindi) // शाबाश मिठू", "right": "shabaash mithu", "left_source": "Netflix engagement report", "right_source": "IMDb"}];
+const KEY = 'streaming-engagement-pair-labels';
+let V = JSON.parse(localStorage.getItem(KEY) || '{}');
+
+function draw() {
+  document.getElementById('list').innerHTML = PAIRS.map((p, i) => `
+    <div class="pair">
+      <div class="n">Pair ${i + 1}</div>
+      <div class="t"><b>${esc(p.left)}</b></div>
+      <div class="t"><b>${esc(p.right)}</b></div>
+      <div class="src">${esc(p.left_source)} &nbsp;vs&nbsp; ${esc(p.right_source)}</div>
+      <div class="btns">
+        ${['same', 'different', "can't tell"].map(v => `
+          <button aria-pressed="${V[p.id] === v}" onclick="pick('${p.id}', '${v}')">${v}</button>`).join('')}
+      </div>
+    </div>`).join('');
+  const n = Object.keys(V).length;
+  document.getElementById('done').textContent = n;
+  document.getElementById('fill').style.width = (100 * n / PAIRS.length) + '%';
+  document.getElementById('out').value = payload();
+}
+function esc(s) { return String(s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+function pick(id, v) { V[id] = v; localStorage.setItem(KEY, JSON.stringify(V)); draw(); }
+function payload() { return JSON.stringify({version: 1, labels: V}, null, 1); }
+function save() {
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([payload()], {type: 'application/json'}));
+  a.download = 'pair-labels.json';
+  a.click();
+  document.getElementById('status').textContent = 'saved pair-labels.json';
+}
+function copy() {
+  navigator.clipboard.writeText(payload()).then(
+    () => document.getElementById('status').textContent = 'copied - paste it into a file',
+    () => document.getElementById('status').textContent = 'copy blocked - select the box and copy by hand');
+}
+draw();
+</script>
+</html>

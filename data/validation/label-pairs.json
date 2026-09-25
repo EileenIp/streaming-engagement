@@ -1,0 +1,275 @@
+{
+ "seed": 20260925,
+ "pairs": [
+  {
+   "id": "p00",
+   "left": "1 Contra Todos: O Filme 3",
+   "right": "todos contra leo",
+   "left_source": "Netflix engagement report",
+   "right_source": "IMDb",
+   "score": 80.0,
+   "stage": "near_miss"
+  },
+  {
+   "id": "p01",
+   "left": "The Valley of a Thousand Hills",
+   "right": "valley of a thousand hills",
+   "left_source": "Netflix engagement report",
+   "right_source": "IMDb",
+   "score": 92.9,
+   "stage": "imdb_fuzzy"
+  },
+  {
+   "id": "p02",
+   "left": "Project Mc²: Part 2",
+   "right": "project mc²",
+   "left_source": "Netflix engagement report",
+   "right_source": "IMDb",
+   "score": 90.9,
+   "stage": "imdb_fuzzy"
+  },
+  {
+   "id": "p03",
+   "left": "The Grand Family: Season 1 // 華麗なる一族: シーズン1",
+   "right": "the giant family",
+   "left_source": "Netflix engagement report",
+   "right_source": "IMDb",
+   "score": 87.5,
+   "stage": "near_miss"
+  },
+  {
+   "id": "p04",
+   "left": "Ai Khai Dek Wat Chedi // ไอ้ไข่ เด็กวัดเจดีย์",
+   "right": "ikai dek wat chedi",
+   "left_source": "Netflix engagement report",
+   "right_source": "IMDb",
+   "score": 87.2,
+   "stage": "near_miss"
+  },
+  {
+   "id": "p05",
+   "left": "Barbie: A Mermaid Tale 2",
+   "right": "barbie a mermaid tale",
+   "left_source": "Netflix engagement report",
+   "right_source": "IMDb",
+   "score": 95.5,
+   "stage": "imdb_fuzzy"
+  },
+  {
+   "id": "p06",
+   "left": "Bebefinn Playtime: 시즌 1",
+   "right": "Bebefinn Playtime",
+   "left_source": "Netflix Top 10",
+   "right_source": "Netflix engagement report",
+   "score": 100.0,
+   "stage": "season_equiv"
+  },
+  {
+   "id": "p07",
+   "left": "Mega Game: Season 1 // Mega Game DinsiemE: Stagione 1",
+   "right": "mega med",
+   "left_source": "Netflix engagement report",
+   "right_source": "IMDb",
+   "score": 82.4,
+   "stage": "near_miss"
+  },
+  {
+   "id": "p08",
+   "left": "Anpanman: Shine! Kulun and the Stars of Life // 映画 それいけ! アンパンマン かがやけ! クルンといのちの星",
+   "right": "anpanman shine kurun and the star of life",
+   "left_source": "Netflix engagement report",
+   "right_source": "IMDb",
+   "score": 96.4,
+   "stage": "imdb_fuzzy"
+  },
+  {
+   "id": "p09",
+   "left": "WWE Elimination Chamber: Elimination Chamber 2025",
+   "right": "render s character elimination re eliminated",
+   "left_source": "Netflix engagement report",
+   "right_source": "IMDb",
+   "score": 65.2,
+   "stage": "near_miss"
+  },
+  {
+   "id": "p10",
+   "left": "Bill Russell: Legend",
+   "right": "lillian russell",
+   "left_source": "Netflix engagement report",
+   "right_source": "IMDb",
+   "score": 70.6,
+   "stage": "near_miss"
+  },
+  {
+   "id": "p11",
+   "left": "Abu Sadaam // ابو صدام",
+   "right": "abu saddam",
+   "left_source": "Netflix engagement report",
+   "right_source": "IMDb",
+   "score": 90.0,
+   "stage": "imdb_fuzzy"
+  },
+  {
+   "id": "p12",
+   "left": "Be-Bop Highschool: The Power // ビー・バップ・ハイスクール 高校与太郎完結篇",
+   "right": "be bop high school",
+   "left_source": "Netflix engagement report",
+   "right_source": "IMDb",
+   "score": 75.6,
+   "stage": "near_miss"
+  },
+  {
+   "id": "p13",
+   "left": "New Kongsuni and Friends: Season 1",
+   "right": "kongsuni and friends",
+   "left_source": "Netflix engagement report",
+   "right_source": "IMDb",
+   "score": 90.9,
+   "stage": "imdb_fuzzy"
+  },
+  {
+   "id": "p14",
+   "left": "Game Over (Tamil Version) (2019)",
+   "right": "still lives end version",
+   "left_source": "Netflix engagement report",
+   "right_source": "IMDb",
+   "score": 69.6,
+   "stage": "near_miss"
+  },
+  {
+   "id": "p15",
+   "left": "Bleach The Movie: Fade to Black // 劇場版 BLEACH Fade to Black 君の名を呼ぶ",
+   "right": "bleach fade to black",
+   "left_source": "Netflix engagement report",
+   "right_source": "IMDb",
+   "score": 80.0,
+   "stage": "near_miss"
+  },
+  {
+   "id": "p16",
+   "left": "D.I.S.C.O.",
+   "right": "D.I.S.C.O. (2026)",
+   "left_source": "Netflix Top 10",
+   "right_source": "Netflix engagement report",
+   "score": 100.0,
+   "stage": "exact"
+  },
+  {
+   "id": "p17",
+   "left": "True Beauty: Limited Series",
+   "right": "True Beauty: Limited Series // 여신강림: 리미티드 시리즈",
+   "left_source": "Netflix Top 10",
+   "right_source": "Netflix engagement report",
+   "score": 100.0,
+   "stage": "exact"
+  },
+  {
+   "id": "p18",
+   "left": "Crayon Shin-chan the Movie: The Storm Called: The Adult Empire Strikes Back // 映画クレヨンしんちゃん 嵐を呼ぶ モーレツ! オトナ帝国の逆襲",
+   "right": "crayon shin chan the storm called the adult empire strikes back",
+   "left_source": "Netflix engagement report",
+   "right_source": "IMDb",
+   "score": 92.6,
+   "stage": "imdb_fuzzy"
+  },
+  {
+   "id": "p19",
+   "left": "Reda's clock // ساعة رضا",
+   "right": "redha s clock",
+   "left_source": "Netflix engagement report",
+   "right_source": "IMDb",
+   "score": 96.0,
+   "stage": "imdb_fuzzy"
+  },
+  {
+   "id": "p20",
+   "left": "Justice Monster: Season 1 // 絶対正義: シーズン1",
+   "right": "gute monster",
+   "left_source": "Netflix engagement report",
+   "right_source": "IMDb",
+   "score": 81.5,
+   "stage": "near_miss"
+  },
+  {
+   "id": "p21",
+   "left": "Bodies Special (2004)",
+   "right": "ladies special",
+   "left_source": "Netflix engagement report",
+   "right_source": "IMDb",
+   "score": 85.7,
+   "stage": "near_miss"
+  },
+  {
+   "id": "p22",
+   "left": "Family Pack",
+   "right": "Family Pack // Loups-Garous",
+   "left_source": "Netflix Top 10",
+   "right_source": "Netflix engagement report",
+   "score": 100.0,
+   "stage": "exact"
+  },
+  {
+   "id": "p23",
+   "left": "Phu Bao Thai Bahn E-Saan Juad // ผู้บ่าวไทบ้าน อีสานจ้วด",
+   "right": "phu bao thai ban e san juad",
+   "left_source": "Netflix engagement report",
+   "right_source": "IMDb",
+   "score": 96.4,
+   "stage": "imdb_fuzzy"
+  },
+  {
+   "id": "p24",
+   "left": "Long D // 롱디",
+   "right": "long day",
+   "left_source": "Netflix engagement report",
+   "right_source": "IMDb",
+   "score": 85.7,
+   "stage": "near_miss"
+  },
+  {
+   "id": "p25",
+   "left": "Old Fashioned Cupcake: Season 1 // オールドファッションカップケーキ: シーズン1",
+   "right": "old fashion cupcake",
+   "left_source": "Netflix engagement report",
+   "right_source": "IMDb",
+   "score": 95.0,
+   "stage": "imdb_fuzzy"
+  },
+  {
+   "id": "p26",
+   "left": "The Netflix Cup",
+   "right": "the fa cup",
+   "left_source": "Netflix engagement report",
+   "right_source": "IMDb",
+   "score": 72.0,
+   "stage": "near_miss"
+  },
+  {
+   "id": "p27",
+   "left": "Doctor (Tamil) (2021)",
+   "right": "family doctor",
+   "left_source": "Netflix engagement report",
+   "right_source": "IMDb",
+   "score": 88.0,
+   "stage": "near_miss"
+  },
+  {
+   "id": "p28",
+   "left": "Raw: February 2, 2026",
+   "right": "Raw: February 2, 2026",
+   "left_source": "Netflix Top 10",
+   "right_source": "Netflix engagement report",
+   "score": 100.0,
+   "stage": "exact"
+  },
+  {
+   "id": "p29",
+   "left": "Shabaash Mithu (Hindi) // शाबाश मिठू",
+   "right": "shabaash mithu",
+   "left_source": "Netflix engagement report",
+   "right_source": "IMDb",
+   "score": 82.4,
+   "stage": "near_miss"
+  }
+ ]
+}
