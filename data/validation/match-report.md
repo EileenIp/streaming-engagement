@@ -1,13 +1,13 @@
 # Match report — Phase 2
 
-Built 2026-09-25 at fuzzy threshold **90**, which is the value Checkpoint 2 exists to set. Every figure here comes from `python -m src.match_report`.
+Built 2026-09-25 at fuzzy threshold **88**, which is the value Checkpoint 2 exists to set. Every figure here comes from `python -m src.match_report`.
 
 ## The two joins
 
 | join | rows | matched | rate |
 |---|---|---|---|
 | Netflix Top 10 → engagement report (same half) | 2,764 | 2,751 | 99.5% |
-| Netflix engagement titles → IMDb id | 24,902 | 22,886 | 91.9% |
+| Netflix engagement titles → IMDb id | 24,902 | 22,963 | 92.2% |
 
 Exact string matching with no normalisation at all managed 57.0% and 54.0% on the first join (Phase 0). The difference is what the normalisation ladder is worth.
 
@@ -47,16 +47,16 @@ The IMDb index holds 4,959,624 names for 2,851,090 candidate titles, including a
 | spacing | 133 | 0.5% |
 | qualifier_dropped | 12 | 0.0% |
 | prefix | 660 | 2.7% |
-| fuzzy (≥ 90) | 181 | 0.7% |
-| near miss (best score below threshold) | 1,944 | 7.8% |
+| fuzzy (≥ 88) | 258 | 1.0% |
+| near miss (best score below threshold) | 1,867 | 7.5% |
 | no candidate at all | 72 | 0.3% |
 
 **98.7% of all reported viewing hours** sit on a title that reached an IMDb id — the unmatched residue is mostly small titles.
 
 | kind | matched | of | rate |
 |---|---|---|---|
-| film | 15,485 | 16,154 | 95.9% |
-| tv | 7,401 | 8,748 | 84.6% |
+| film | 15,538 | 16,154 | 96.2% |
+| tv | 7,425 | 8,748 | 84.9% |
 
 ### Where a name hit more than one IMDb id
 
@@ -88,8 +88,8 @@ Of the 5,799 resolved by votes, 2,388 had a runner-up with under 100 votes — t
 
 ### Two checks on the result
 
-* **Films sharing an id:** 630 ids carry more than one film entity (1,322 entities). Most are the same film published twice by Netflix under different names — `The Godfather` and `The Godfather (1972)`, `Vertigo // 버티고` and `Vertigo (1958)` — which is the join doing its job. The rest are wrong, and they are the reason a Phase 3 fact table must be keyed on the resolved id rather than the published name.
-* **Seasons IMDb does not list:** 214 of 6,049 matched TV entities report a season number IMDb has no episodes for. That is either a wrong match or IMDb being behind, and it is a cheap ongoing check on match quality.
+* **Films sharing an id:** 629 ids carry more than one film entity (1,320 entities). Most are the same film published twice by Netflix under different names — `The Godfather` and `The Godfather (1972)`, `Vertigo // 버티고` and `Vertigo (1958)` — which is the join doing its job. The rest are wrong, and they are the reason a Phase 3 fact table must be keyed on the resolved id rather than the published name.
+* **Seasons IMDb does not list:** 217 of 6,049 matched TV entities report a season number IMDb has no episodes for. That is either a wrong match or IMDb being behind, and it is a cheap ongoing check on match quality.
 
 ## The fuzzy rung, and the threshold
 
@@ -98,24 +98,24 @@ Of the 5,799 resolved by votes, 2,388 had a runner-up with under 100 votes — t
 | score band | pairs |
 |---|---|
 | 98–100 | 11 |
-| 95–98 | 54 |
-| 92–95 | 64 |
-| 90–92 | 53 |
-| 85–90 | 166 |
-| 80–85 | 213 |
-| 70–80 | 504 |
+| 95–98 | 55 |
+| 92–95 | 63 |
+| 90–92 | 56 |
+| 85–90 | 162 |
+| 80–85 | 209 |
+| 70–80 | 509 |
 | 0–70 | 1,074 |
 
 What each threshold would accept:
 
 | threshold | fuzzy pairs accepted | left as near misses |
 |---|---|---|
-| 80 | 561 | 1,578 |
-| 85 | 348 | 1,791 |
-| 88 | 258 | 1,881 |
-| 90 | 182 | 1,957 |
+| 80 | 556 | 1,583 |
+| 85 | 347 | 1,792 |
+| 88 | 259 | 1,880 |
+| 90 | 185 | 1,954 |
 | 92 | 129 | 2,010 |
-| 95 | 65 | 2,074 |
+| 95 | 66 | 2,073 |
 | 98 | 11 | 2,128 |
 
 The full list is in `near-misses.csv`, worst score first. The pairs just below the current threshold are the ones to read: they decide whether the threshold moves.
@@ -124,32 +124,32 @@ The full list is in `near-misses.csv`, worst score first. The pairs just below t
 
 | score | left | right |
 |---|---|---|
-| 89.9 | GODZILLA Planet of the Monsters: Part 1 // GODZILLA 怪獣惑星: パート1 | godzilla planet of the monsters |
-| 89.8 | Doraemon the Movie: Nobita and the Galaxy Super-express // 映画ドラえもん のび太と銀河超特急 | doraemon nobita and the galaxy super express |
-| 89.8 | Doraemon the Movie: Nobita and the Knights on Dinosaurs // 映画ドラえもん のび太と竜の騎士 | doraemon nobita and the knights on dinosaurs |
-| 89.7 | Natsume Yuujinchou: Ishi Okoshi to Ayashiki Raihousha: Film Series // 夏目友人帳 石起こしと怪しき来訪者: 映画シリーズ | natsume yuujinchou ishi okoshi to ayashiki raihousha |
-| 89.7 | Doraemon the Movie: Nobita and The Giant's Legend of Green Planet // 映画ドラえもん のび太と緑の巨人伝 | doraemon the movie nobita and the green giant legend |
-| 89.7 | Giants the Movie // Giants the Movie ～頂点への挑戦～ | ant the movie |
-| 89.7 | A Paedophile in My Family: Surviving Dad: Season 1 | a paedophile in my family surviving dad |
-| 89.7 | Death of a Son | death of a soul |
-| 89.6 | Detective Conan the Movie: The Phantom of Baker Street // 劇場版 名探偵コナン ベイカー街の亡霊 | detective conan the phantom of baker street |
-| 89.6 | Doraemon the Movie: Nobita's Three Visionary Swordsmen // 映画ドラえもん のび太と夢幻三剣士 | doraemon nobita s three visionary swordsmen |
-| 89.6 | WWE St. Valentine's Day Massacre: 1999 | waw st valentine s day massacre |
-| 89.6 | Sampradayani Suppini Sudhapoosani // Sampradayini Suppini Suddapoosani | sampradayaini suppini suddapusaani |
-| 89.5 | Monks in the Kitchen: Season 1 // 공양간의 셰프들: 시즌 1 | men in the kitchen |
-| 89.5 | Rise of the Krays | the rise of the krays |
-| 89.5 | Fall of the Krays | the fall of the krays |
-| 89.4 | CoComelon Animal Time: Season 1 | cocomelon jj s animal time |
-| 89.4 | Detective Conan the Movie: The Time-Bombed Skyscraper // 劇場版 名探偵コナン 時計じかけの摩天楼 | detective conan the time bombed skyscraper |
-| 89.4 | Detective Conan the Movie: Magician of the Silver Sky // 劇場版 名探偵コナン 銀翼の奇術師 | detective conan magician of the silver sky |
-| 89.4 | Playing with children // اللعب مع العيال | children playing with fish |
-| 89.3 | Haikyu!! Movie 3: Genius and Sense // 劇場版総集編 青葉城西高校戦『ハイキュー!! 才能とセンス』 | haikyu 3 genius and sense |
+| 87.8 | Detective Conan the Movie: Captured in Her Eyes // 劇場版 名探偵コナン 瞳の中の暗殺者 | detective conan captured in her eyes |
+| 87.8 | Pokémon The Movie: Arceus and the Jewel of Life // 극장판 포켓몬스터 DP: 아르세우스 초극의 시공으로 | pokemon arceus and the jewel of life |
+| 87.8 | Merry Christmas (Telugu) (2023) | the merry christmas |
+| 87.8 | Doraemon the Movie: Nobita and the Space Heroes // 映画ドラえもん のび太の宇宙英雄記 (スペースヒーローズ) | doraemon nobita and the space heroes |
+| 87.8 | Merry Christmas (Hindi) // मेरी क्रिसमस (हिंदी) | merry christmas dick |
+| 87.7 | Baby Einstein Ocean Explorers: Season 1 | baby einstein farm explorers |
+| 87.5 | The Grand Family: Season 1 // 華麗なる一族: シーズン1 | the giant family |
+| 87.5 | Qarmat In trouble // قرمط بيتمرمط | lara in trouble |
+| 87.5 | Ejakulasi Dini: Season 1 | edi ejakulasi dini |
+| 87.5 | Detective Conan the Movie: Countdown to Heaven // 劇場版 名探偵コナン 天国へのカウントダウン | detective conan countdown to heaven |
+| 87.5 | Our Diary // 우리들의 일기 | our day |
+| 87.5 | The Dublin Murders: Season 1 | dublin murders |
+| 87.5 | Just Wanna Say I Love U: Season 1 | just wanna say i love you |
+| 87.5 | Didi & Friends: Season 1 | bigi and friends |
+| 87.5 | Her Divorce Lawyer // محامي خلع | divorce lawyer |
+| 87.5 | The 101st Proposal: Season 1 // 101回目のプロポーズ: シーズン1 | 101st proposal |
+| 87.5 | Ordinary Glory // 平凡的榮耀 // 平凡的荣耀 | the ordinary glory |
+| 87.5 | Emergency Interrogation Room Special // 緊急取調室: ドラマスペシャル 緊急取調室 | emergency interrogation room |
+| 87.5 | Doraemon the Movie: Nobita and the Spiral City // 映画ドラえもん のび太のねじ巻き都市冒険記 | doraemon nobita and the spiral city |
+| 87.5 | Burn the Witch: #0.8 | burn the witch |
 
 ---
 
 ## What Checkpoint 2 has to decide
 
 1. **The fuzzy threshold**, from the table and the near-miss list above. Record it with three example pairs it correctly rejects — that is the interview answer.
-2. **What happens to unmatched titles.** Dropping them biases the result towards titles that resolve (the long tail vanishes); keeping them breaks the joins. Either is defensible, stated plainly. The unmatched residue is 8.1% of entities but only 1.3% of hours.
+2. **What happens to unmatched titles.** Dropping them biases the result towards titles that resolve (the long tail vanishes); keeping them breaks the joins. Either is defensible, stated plainly. The unmatched residue is 7.8% of entities but only 1.3% of hours.
 3. **Whether the weak rungs stay.** `qualifier_dropped` merges `Shameless (U.S.)` with `Shameless`; `prefix` matches `ONE PIECE: East Blue` to the series and gives up knowing which arc. Their counts are above, and either can be switched off on its own.
 
