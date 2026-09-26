@@ -5,7 +5,7 @@ ENGAGEMENT_PERIODS. From 2027 the report is annual (announced July 2026), so a
 period is a start and end date, never an H1/H2 label baked into logic.
 """
 from dataclasses import dataclass
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -70,4 +70,8 @@ PAGEVIEWS_URL = ("https://wikimedia.org/api/rest_v1/metrics/pageviews/per-articl
                  "en.wikipedia/all-access/user/{article}/daily/{start}/{end}")
 # Covers every engagement period plus the Top 10 weeks around them.
 PAGEVIEWS_START = date(2023, 6, 1)
-PAGEVIEWS_END = date(2026, 6, 30)
+# Yesterday, not the last report's end date: an article created after June 2026 has no
+# views inside the report window and comes back empty, which looks like a missing
+# article rather than a new one. The window each file was fetched with is recorded in
+# the file itself and in the manifest.
+PAGEVIEWS_END = date.today() - timedelta(days=1)

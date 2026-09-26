@@ -93,12 +93,1982 @@
     "sha256": "69cfb7394dbd9b3d02fac65e2b3eb5af005765d372e64a17491c9b2f03681a19",
     "last_modified": "Tue, 15 Sep 2026 18:54:23 GMT"
   },
+  "data/raw/wikipedia/pageviews/%25C3%2592l%25C3%25B2t%25C5%25ABr%25C3%25A9%3A_The_Journey.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/%25C3%2592l%25C3%25B2t%25C5%25ABr%25C3%25A9%3A_The_Journey/daily/20230601/20260630",
+    "downloaded_at": "2026-09-26T15:37:11+00:00",
+    "bytes": 332,
+    "sha256": "cb780802b6da249be417f249403d3b164a2ec0787f92ef350c025f32fc35295e"
+  },
+  "data/raw/wikipedia/pageviews/100_Meters_%28film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/100_Meters_%28film%29/daily/20230601/20260630",
+    "downloaded_at": "2026-09-26T15:37:13+00:00",
+    "bytes": 47847,
+    "sha256": "ee83baf4867f58ffd9f5a99807a2cb0b62fede91a250864ba3d5b26d5650b83a"
+  },
+  "data/raw/wikipedia/pageviews/10Dance.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/10Dance/daily/20230601/20260630",
+    "downloaded_at": "2026-09-26T15:37:13+00:00",
+    "bytes": 36746,
+    "sha256": "d7367bab30c38485ad8c4ff045e1d46766ddb12fe35f82cc74018ca52e9f504f"
+  },
+  "data/raw/wikipedia/pageviews/13_Hours%3A_The_Secret_Soldiers_of_Benghazi.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/13_Hours%3A_The_Secret_Soldiers_of_Benghazi/daily/20230601/20260630",
+    "downloaded_at": "2026-09-26T15:37:16+00:00",
+    "bytes": 216294,
+    "sha256": "62288ab49c840c43406c0ac5c99df9371570a4ac4173609a7fba9bb9b09b545a"
+  },
+  "data/raw/wikipedia/pageviews/180%20%282026%20film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/180%20%282026%20film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:38:05+00:00",
+    "bytes": 307,
+    "sha256": "af728bdd97a171ccbacb02663ac6530a24e33e9f83b7e5ae988706aa4ba7eb9a"
+  },
+  "data/raw/wikipedia/pageviews/180_%282026_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/180_%282026_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:38:26+00:00",
+    "bytes": 307,
+    "sha256": "3d3cfe8a3e25cd3382097c3b3413e3cfa5132a13d0cd904fb34e3777b42d61cd"
+  },
+  "data/raw/wikipedia/pageviews/1883_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/1883_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:38:28+00:00",
+    "bytes": 202766,
+    "sha256": "68b4d39f89b920ff7da4309c42f8229080ba55c4fc6bf0c3998725524ceda696"
+  },
+  "data/raw/wikipedia/pageviews/18th_Rose.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/18th_Rose/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:38:28+00:00",
+    "bytes": 34332,
+    "sha256": "d84d6c3eff3073089b1e19da65bb363efa6f9b500bff80d17a1d686f8564f9eb"
+  },
+  "data/raw/wikipedia/pageviews/1923_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/1923_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:38:30+00:00",
+    "bytes": 202910,
+    "sha256": "b566702cf095976873ae643a33d9d694a0eb72cb3d74a01b37673d754838245c"
+  },
+  "data/raw/wikipedia/pageviews/24_Hours_with_Gaspar.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/24_Hours_with_Gaspar/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:38:31+00:00",
+    "bytes": 182036,
+    "sha256": "4ed4e5b68bfa3dce7629a00eba4510609c50eb86833a3a7904d14a8d1ce9ed5e"
+  },
+  "data/raw/wikipedia/pageviews/27_Dresses.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/27_Dresses/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:38:33+00:00",
+    "bytes": 194794,
+    "sha256": "f2697cd4f8e8cee6328b21953f3fcb2f2def6c88355e94a0b6bf623746323c5e"
+  },
+  "data/raw/wikipedia/pageviews/27_Nights.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/27_Nights/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:38:34+00:00",
+    "bytes": 61849,
+    "sha256": "264c09e0e2238bcd63e6d4d4ea44fec21843a6d362c1dbb107f51c488544783d"
+  },
+  "data/raw/wikipedia/pageviews/28_Weeks_Later.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/28_Weeks_Later/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:38:35+00:00",
+    "bytes": 200333,
+    "sha256": "e05babd8a75024053616e0873b97a7bd05c276cb3c5f037d1b168bea216bee2d"
+  },
+  "data/raw/wikipedia/pageviews/28_Years_Later.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/28_Years_Later/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:39:00+00:00",
+    "bytes": 159203,
+    "sha256": "8e608a1f740db027ac3ad4bb15f74d548ca2627bb13552d5c2421e8a475eb23f"
+  },
+  "data/raw/wikipedia/pageviews/29_%28film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/29_%28film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:39:01+00:00",
+    "bytes": 38393,
+    "sha256": "61b066ad36f4c16c55df2cf4d53b0463e9988026d77a8e29269184c6cc73dd50"
+  },
+  "data/raw/wikipedia/pageviews/3_Body_Problem_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/3_Body_Problem_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:39:02+00:00",
+    "bytes": 211842,
+    "sha256": "f2c497a52308d2c3a0941fa98ae905bfe9c7e0b3b50fac054d433a2a07f76e4f"
+  },
+  "data/raw/wikipedia/pageviews/404_%28film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/404_%28film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:39:04+00:00",
+    "bytes": 194028,
+    "sha256": "0236a2cb56660e7a2ecb812810d34702902573b689293a954f39e074d91e6054"
+  },
+  "data/raw/wikipedia/pageviews/40_Acres_%28film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/40_Acres_%28film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:39:05+00:00",
+    "bytes": 164374,
+    "sha256": "c062041b30749bbb9d9fbb259e832be188d20e179c452beccd5961b2307ab91c"
+  },
+  "data/raw/wikipedia/pageviews/4_Kings_II.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/4_Kings_II/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:39:06+00:00",
+    "bytes": 168809,
+    "sha256": "1a137e4fa5c8c28322986679334e4c6c1da9f2aacb079df70c4810de54911162"
+  },
+  "data/raw/wikipedia/pageviews/50_First_Dates.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/50_First_Dates/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:39:08+00:00",
+    "bytes": 200034,
+    "sha256": "b1ac0f5017e91c8b380b92f2a4c7d3878c534ed07f229493675ba8d769305706"
+  },
+  "data/raw/wikipedia/pageviews/53_Sundays.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/53_Sundays/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:39:09+00:00",
+    "bytes": 37348,
+    "sha256": "23602716017e173065f5ab8b94fa6719491f73189fa0e500a6dd753fac6a57d6"
+  },
+  "data/raw/wikipedia/pageviews/65_%28film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/65_%28film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:39:11+00:00",
+    "bytes": 193868,
+    "sha256": "384b46bde12a9af1ee5159a61f81c0605a539ff6c133333eb1fa7ef6ff4f9f58"
+  },
+  "data/raw/wikipedia/pageviews/96_Minutes_%282011_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/96_Minutes_%282011_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:39:12+00:00",
+    "bytes": 32749,
+    "sha256": "58fb22111813162f2fa254c77b4832a91a6da178bdb2fbfbbdc9bc42fd242dc0"
+  },
+  "data/raw/wikipedia/pageviews/AKA_%282023_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/AKA_%282023_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:40:00+00:00",
+    "bytes": 199524,
+    "sha256": "734daf1535acb72a2f867858467e5aaf1dd1c96233a5a9f49481afce588d56fc"
+  },
+  "data/raw/wikipedia/pageviews/A_Beautiful_Life_%282023_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Beautiful_Life_%282023_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:40:01+00:00",
+    "bytes": 212468,
+    "sha256": "2209beff6c06cd143ba46a22db69712e56cbdc9158a7388e656ee77dd07e9428"
+  },
+  "data/raw/wikipedia/pageviews/A_Body_That_Works.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Body_That_Works/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:40:03+00:00",
+    "bytes": 150305,
+    "sha256": "cf452846fc25aaee97f5384f9040d83387326711bb7b1084a7e44d09b97da8bd"
+  },
+  "data/raw/wikipedia/pageviews/A_Brother_and_7_Siblings.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Brother_and_7_Siblings/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:40:04+00:00",
+    "bytes": 113595,
+    "sha256": "198fafe56346ddf0299a711c089a71dcbb6cedd5131b63dbf76c57ab54ec9032"
+  },
+  "data/raw/wikipedia/pageviews/A_Day_and_a_Half.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Day_and_a_Half/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:40:05+00:00",
+    "bytes": 66748,
+    "sha256": "9e06c39ef7ec56e61612c8369214554a0989f69ff69948807bf80e46ffd69780"
+  },
+  "data/raw/wikipedia/pageviews/A_Day_to_Die.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Day_to_Die/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:40:07+00:00",
+    "bytes": 196192,
+    "sha256": "789697523d1b06bdcf044ba629c1b9685385379926a382ca16fcc01d67a18bfa"
+  },
+  "data/raw/wikipedia/pageviews/A_Discovery_of_Witches_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Discovery_of_Witches_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:40:08+00:00",
+    "bytes": 224502,
+    "sha256": "134362001ad5991d1783bdd692a2a9496b68877dfe0e7651a97a90c995e1bf06"
+  },
+  "data/raw/wikipedia/pageviews/A_Dog%27s_Way_Home.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Dog%27s_Way_Home/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:40:10+00:00",
+    "bytes": 201517,
+    "sha256": "013f9812dc7a882f3150fb99774636bd6134beae394b2c30b7025065260b51c8"
+  },
+  "data/raw/wikipedia/pageviews/A_Family_Affair_%282024_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Family_Affair_%282024_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:40:11+00:00",
+    "bytes": 204495,
+    "sha256": "a294c8a942798a323d202cf1d5f90c1f551959b588c0a41dcfa7ecb3233d75a3"
+  },
+  "data/raw/wikipedia/pageviews/A_Foggy_Tale.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Foggy_Tale/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:40:12+00:00",
+    "bytes": 49734,
+    "sha256": "bff0f8b99824e63427027cf9c7a81d682da2957ae5c8e1c423cf230c23129092"
+  },
+  "data/raw/wikipedia/pageviews/A_Good_Girl%27s_Guide_to_Murder_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Good_Girl%27s_Guide_to_Murder_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:41:00+00:00",
+    "bytes": 197958,
+    "sha256": "518384e10201e852e7ff72a2572034cb853eff77ea4767cdf73b7103e911cabc"
+  },
+  "data/raw/wikipedia/pageviews/A_House_of_Dynamite.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_House_of_Dynamite/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:41:01+00:00",
+    "bytes": 79234,
+    "sha256": "b38ddbddb7d89d892574474760ecd946805a87906a01f2f59d931e7b215a3101"
+  },
+  "data/raw/wikipedia/pageviews/A_Journey_%28film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Journey_%28film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:41:02+00:00",
+    "bytes": 146489,
+    "sha256": "42dbf2ee732a5a3d313af87dfd026d7f66dfd47a4884d06995e7c8f716bcec65"
+  },
+  "data/raw/wikipedia/pageviews/A_Killer_Paradox.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Killer_Paradox/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:41:04+00:00",
+    "bytes": 168014,
+    "sha256": "9ca4ab346cf337d8ade0c788200c811781b1b6338ee948f17bc980f26f474622"
+  },
+  "data/raw/wikipedia/pageviews/A_Madea_Homecoming.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Madea_Homecoming/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:41:06+00:00",
+    "bytes": 203901,
+    "sha256": "92fcc4f68f46a7ad45e659b76259497d3d018d6b22f7e54c0d3095c31803a5e3"
+  },
+  "data/raw/wikipedia/pageviews/A_Man_Called_Otto.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Man_Called_Otto/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:41:07+00:00",
+    "bytes": 203939,
+    "sha256": "a98110a1e9e0d672504b48a583e78cb89e0f3dd46fd822f3b74aa01288df4a09"
+  },
+  "data/raw/wikipedia/pageviews/A_Man_in_Full_%28miniseries%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Man_in_Full_%28miniseries%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:41:09+00:00",
+    "bytes": 157469,
+    "sha256": "bc4169c8cd321068786d803164eebac4703dfdb6c0a2701e878e5427c02bad1f"
+  },
+  "data/raw/wikipedia/pageviews/A_Man_on_the_Inside.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Man_on_the_Inside/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:41:10+00:00",
+    "bytes": 128775,
+    "sha256": "dfc5e43b8e9a02ec499d481c80367a8a6d8f778bbbea5723371a66a2d4c222ae"
+  },
+  "data/raw/wikipedia/pageviews/A_Merry_Little_Ex-Mas.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Merry_Little_Ex-Mas/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:41:11+00:00",
+    "bytes": 99710,
+    "sha256": "4f95e38165cb2593d67e2ed4bed663f6c05a3235aba52fd3feb7eac58ee94f3a"
+  },
+  "data/raw/wikipedia/pageviews/A_Nearly_Normal_Family.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Nearly_Normal_Family/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:41:13+00:00",
+    "bytes": 177222,
+    "sha256": "cf114a3bef31d07573bcc1abbacd07925212127e68fccf0d3a971c78962fcc8e"
+  },
+  "data/raw/wikipedia/pageviews/A_Normal_Woman.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Normal_Woman/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:42:00+00:00",
+    "bytes": 70109,
+    "sha256": "c61982d622fe919a5a2a3cba33fe0db0ef28940611efd208ff1edf170e45188a"
+  },
+  "data/raw/wikipedia/pageviews/A_Part_of_You.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Part_of_You/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:42:01+00:00",
+    "bytes": 46643,
+    "sha256": "a8213ac7a1ed0b57316b91e2682b4b37aaf82f36ffd0250dc43d2883fabb10e1"
+  },
+  "data/raw/wikipedia/pageviews/A_Perfect_Getaway.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Perfect_Getaway/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:42:03+00:00",
+    "bytes": 202709,
+    "sha256": "c4ac1a974b7a846abdd49eae64bc3d6c45672a167b71457845455579891884ed"
+  },
+  "data/raw/wikipedia/pageviews/A_Perfect_Story.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Perfect_Story/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:42:05+00:00",
+    "bytes": 189973,
+    "sha256": "cfb2811f81b73c395d813f166de2c45dd1053d8eed1d937fd2fb81babbe4ce82"
+  },
+  "data/raw/wikipedia/pageviews/A_Quiet_Place%3A_Day_One.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Quiet_Place%3A_Day_One/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:42:07+00:00",
+    "bytes": 210093,
+    "sha256": "95fb8745b6063caa36cd767e8a47403e869ddd668a2272ec6fbf012f4588881e"
+  },
+  "data/raw/wikipedia/pageviews/A_Simple_Favor_%28film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Simple_Favor_%28film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:42:09+00:00",
+    "bytes": 208713,
+    "sha256": "6f7d19166b5efce89c6acf1ed1406c15b369867b21e8ed9027574936b3d47869"
+  },
+  "data/raw/wikipedia/pageviews/A_Time_Called_You.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Time_Called_You/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:42:11+00:00",
+    "bytes": 202892,
+    "sha256": "bf0022dfdce50b92c6e86773f13fb408d84715f23b72598d06011b09f36b7e5c"
+  },
+  "data/raw/wikipedia/pageviews/A_Time_to_Kill_%281996_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Time_to_Kill_%281996_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:42:13+00:00",
+    "bytes": 214818,
+    "sha256": "f4b7bd6c9d17471d06096363c278af45132eea606fba9f3db0056dcc95c93986"
+  },
+  "data/raw/wikipedia/pageviews/A_Very_Good_Girl.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Very_Good_Girl/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:42:14+00:00",
+    "bytes": 190608,
+    "sha256": "a6186e507f23ebd768b5ccf810501b221febc4d0a401247f8dcff40d6a3d8944"
+  },
+  "data/raw/wikipedia/pageviews/A_Virtuous_Business.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Virtuous_Business/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:42:16+00:00",
+    "bytes": 126545,
+    "sha256": "320612c37212b4b66e74fb0957eb4ff142d4ef13b4f43bc8e9fcc1c015341d63"
+  },
+  "data/raw/wikipedia/pageviews/A_Widow%27s_Game.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/A_Widow%27s_Game/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:58:11+00:00",
+    "bytes": 86872,
+    "sha256": "07bb281091d9f42f3b8605f09301d99795c57e94deef0657d673639c84de3ef1"
+  },
+  "data/raw/wikipedia/pageviews/Ad_Vitam_%28film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Ad_Vitam_%28film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:58:05+00:00",
+    "bytes": 102269,
+    "sha256": "221efbe42c604f2a078290be071d3b2f344aec7bc6e6a3ef756cf173499ca6be"
+  },
+  "data/raw/wikipedia/pageviews/Adolescence_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Adolescence_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:43:26+00:00",
+    "bytes": 138537,
+    "sha256": "cd04d3ce008ddd752922d464f3624eba3892d0ad4f5deb6402ad02f1529d749c"
+  },
+  "data/raw/wikipedia/pageviews/Alice_in_Borderland_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Alice_in_Borderland_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:54:05+00:00",
+    "bytes": 220942,
+    "sha256": "d4ea80efa0d19f365e671cec9720bc89fdde67ecf5d656bbd48088d156434e44"
+  },
+  "data/raw/wikipedia/pageviews/All_the_Light_We_Cannot_See_%28miniseries%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/All_the_Light_We_Cannot_See_%28miniseries%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:56:02+00:00",
+    "bytes": 203693,
+    "sha256": "cb83899c72ee5de96c0788ec9eedbadcb18b036bb2a71423bf17ce9ef32c382d"
+  },
+  "data/raw/wikipedia/pageviews/American_Nightmare_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/American_Nightmare_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:57:03+00:00",
+    "bytes": 176419,
+    "sha256": "3b24a3d2483dddc27f5bef0e7ac6b2853d8ee47cef2c00cdc844fee71008c609"
+  },
+  "data/raw/wikipedia/pageviews/Apex_%282026_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Apex_%282026_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:51:01+00:00",
+    "bytes": 47202,
+    "sha256": "8a12ae4bc0406514b02e6ed0ef7799f60764799461ce8c6cba9f5a5495bb1dea"
+  },
+  "data/raw/wikipedia/pageviews/Arcane_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Arcane_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:55:07+00:00",
+    "bytes": 205190,
+    "sha256": "5459c16e7a4367c006cdb3de02a3aee1d53bdebecb7b7a47b5bf8352b8b3905a"
+  },
+  "data/raw/wikipedia/pageviews/As_You_Stood_By.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/As_You_Stood_By/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:55:05+00:00",
+    "bytes": 108549,
+    "sha256": "8a1481037df7b6ea620e40f0304d6302146fa9d2118aa6d80d5c1cdf35011573"
+  },
+  "data/raw/wikipedia/pageviews/Avatar%3A_The_Last_Airbender_%282024_TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Avatar%3A_The_Last_Airbender_%282024_TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:44:03+00:00",
+    "bytes": 232206,
+    "sha256": "b1024aeaad906eda85c90d28f51c3d9fb1c9482415ae97908bb5ec73c2a2a294"
+  },
+  "data/raw/wikipedia/pageviews/Baby_Reindeer.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Baby_Reindeer/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:45:10+00:00",
+    "bytes": 198550,
+    "sha256": "9a28591dac5c813499664e8a1c9bbd4b9dc6fff8d32840a50485e5773593ec1f"
+  },
+  "data/raw/wikipedia/pageviews/Back_in_Action_%282025_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Back_in_Action_%282025_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:47:05+00:00",
+    "bytes": 108535,
+    "sha256": "43650b6801a369b202e962ea9638df91cf228948be3b1d5e7962e964caad3c2a"
+  },
+  "data/raw/wikipedia/pageviews/Bad_Influence_%282025_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Bad_Influence_%282025_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:00:14+00:00",
+    "bytes": 88133,
+    "sha256": "7ad85d304ca9e33fd304a5c88e1e4b3c5e983f55b56b121935b7d9e4c8bc58b4"
+  },
+  "data/raw/wikipedia/pageviews/Ballerina_%282023_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Ballerina_%282023_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:03:00+00:00",
+    "bytes": 193041,
+    "sha256": "e54e3866fd4195efe8266a5a4be09710352bfed358ab5ef711af688bed545419"
+  },
+  "data/raw/wikipedia/pageviews/Beauty_in_Black.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Beauty_in_Black/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:46:08+00:00",
+    "bytes": 117044,
+    "sha256": "5f970b0ca2a4e218dabcdd766e2ad4df680fbd4f37e42eb823d7432a659abf07"
+  },
+  "data/raw/wikipedia/pageviews/Beckham_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Beckham_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:51:03+00:00",
+    "bytes": 133442,
+    "sha256": "51f2b7fd58ed72961951b5d3937ca080671814f8bee6fdd01180e5ef0800c358"
+  },
+  "data/raw/wikipedia/pageviews/Berlin_%28Spanish_TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Berlin_%28Spanish_TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:45:01+00:00",
+    "bytes": 176828,
+    "sha256": "a9db20f89deb76a484846aaf5cee77680db5d9981ac1d604c24b99d6c04d79c7"
+  },
+  "data/raw/wikipedia/pageviews/Berlin_and_the_Lady_with_an_Ermine.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Berlin_and_the_Lady_with_an_Ermine/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:50:59+00:00",
+    "bytes": 31062,
+    "sha256": "84e0fbf4a5dfe950aa969b44ad9ed4a86bf45e8cdef935964e083768ca7aace4"
+  },
+  "data/raw/wikipedia/pageviews/Beyond_the_Bar.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Beyond_the_Bar/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:49:59+00:00",
+    "bytes": 75122,
+    "sha256": "ec8176210adecc26d4e27370fe03dfab72250a96e97b6b37096e74aedb83ed0a"
+  },
+  "data/raw/wikipedia/pageviews/Black_Doves.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Black_Doves/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:47:06+00:00",
+    "bytes": 173697,
+    "sha256": "2319628a24fa7e2db6a2ebe9e66e1d44135c427fc2a05c5b60280db0c33375ac"
+  },
+  "data/raw/wikipedia/pageviews/Black_Mirror.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Black_Mirror/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:52:08+00:00",
+    "bytes": 197946,
+    "sha256": "7542878b024f6e5d25bd25346cef454a6f7fd99f5495831c0bf5a67a5ca0aa0b"
+  },
+  "data/raw/wikipedia/pageviews/Bloodhounds_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Bloodhounds_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:54:59+00:00",
+    "bytes": 30359,
+    "sha256": "eff0a74b7d22552c42729e3bbd94ecb7dcde4d407f5e1ffc23bf80d02e69cafc"
+  },
+  "data/raw/wikipedia/pageviews/Bon_App\u00e9tit%2C_Your_Majesty.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Bon_App%C3%A9tit%2C_Your_Majesty/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:43:28+00:00",
+    "bytes": 70533,
+    "sha256": "1ad66af7da3126ac713bc2b9a1eff90ccdc5bd4a64d50079d15669291d5394b1"
+  },
+  "data/raw/wikipedia/pageviews/Breathless_%28Spanish_TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Breathless_%28Spanish_TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:57:02+00:00",
+    "bytes": 135675,
+    "sha256": "77a91935e6e7721b26c587b73c30f30216e07174f4710d1bacccf1b2c9c67488"
+  },
+  "data/raw/wikipedia/pageviews/Bridgerton.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Bridgerton/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:43:19+00:00",
+    "bytes": 195631,
+    "sha256": "2026283ac0b9e1912160159868cf1924f6ce243fc6fac323f66dc7fcec10293b"
+  },
+  "data/raw/wikipedia/pageviews/Bullet_Train_Explosion.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Bullet_Train_Explosion/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:01:04+00:00",
+    "bytes": 98221,
+    "sha256": "88b8ee99d404c1b4bfb74469f8da7cdad13de9b5f11691d04ef18e887a41b427"
+  },
+  "data/raw/wikipedia/pageviews/Burning_Body.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Burning_Body/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:56:03+00:00",
+    "bytes": 187390,
+    "sha256": "f91607324f705fc677d426c967f4cf8f8e0109d1e46c31c315ab25af90a1d49c"
+  },
+  "data/raw/wikipedia/pageviews/Can_This_Love_Be_Translated%3F.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Can_This_Love_Be_Translated%3F/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:47:00+00:00",
+    "bytes": 165922,
+    "sha256": "7790fa7806229be45e85722107c584cd6eb7e7d4652413131355a9078621ddb6"
+  },
+  "data/raw/wikipedia/pageviews/Caramelo_%28film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Caramelo_%28film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:59:02+00:00",
+    "bytes": 56926,
+    "sha256": "ee5bd32f420720f4eec7f16cc21bdae008f7534fdfec1ff0597ab54856c627f5"
+  },
+  "data/raw/wikipedia/pageviews/Carry-On.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Carry-On/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:45:08+00:00",
+    "bytes": 192417,
+    "sha256": "f2cd710613d4e12e06c516affb76613505ebab0af44ecb6dae53a1be597960cd"
+  },
+  "data/raw/wikipedia/pageviews/Cassandra_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Cassandra_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:52:10+00:00",
+    "bytes": 106377,
+    "sha256": "85212327ea9b162c195072bc7875d20aaa986e1ea457a6afe0f74b15f4976f51"
+  },
+  "data/raw/wikipedia/pageviews/Castaway_Diva.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Castaway_Diva/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:58:14+00:00",
+    "bytes": 180874,
+    "sha256": "82519574737fa3f25294fe0e912297e357cd685ca799b4dad6b37a110b68acfb"
+  },
+  "data/raw/wikipedia/pageviews/Cobra_Kai.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Cobra_Kai/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:46:04+00:00",
+    "bytes": 194225,
+    "sha256": "1596b6b118ef5ec7dde339b64d44c8976863a7847bf9eb08d21bd19c4a614e15"
+  },
+  "data/raw/wikipedia/pageviews/Cocomelon_Lane.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Cocomelon_Lane/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:02:10+00:00",
+    "bytes": 141491,
+    "sha256": "bb7f720fc5a8e0cd6a1e3386e9e3ee227be1ed3a012dfb979cf50e6c3e04dd8a"
+  },
+  "data/raw/wikipedia/pageviews/Colors_of_Evil%3A_Red.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Colors_of_Evil%3A_Red/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:59:01+00:00",
+    "bytes": 139947,
+    "sha256": "db6c98b2a12f37658c6581044d8baf53d3740cb42c4b133679e66966de9b492f"
+  },
+  "data/raw/wikipedia/pageviews/Counterstrike_%282025_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Counterstrike_%282025_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:58:02+00:00",
+    "bytes": 92018,
+    "sha256": "578a075b2b6efaa30b6a5aeb1f7a407154a1c0152bfeb8c52cd5b5c1decdaaf1"
+  },
+  "data/raw/wikipedia/pageviews/Culinary_Class_Wars.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Culinary_Class_Wars/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:51:10+00:00",
+    "bytes": 127691,
+    "sha256": "4fc92b8252d34c55af59e56a525eab372c534dc5676fec158f1b6a4a7b81c619"
+  },
+  "data/raw/wikipedia/pageviews/Damsel_%282024_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Damsel_%282024_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:48:13+00:00",
+    "bytes": 178170,
+    "sha256": "5ad3601c93bc15904da37be8a372d20c86ea254f2dbe758ce638c6aafc5e6ad4"
+  },
+  "data/raw/wikipedia/pageviews/Dandadan_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Dandadan_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:52:59+00:00",
+    "bytes": 35790,
+    "sha256": "28b7bf609801bc861e33f03aa59f116e00856b7e21604f23af9a179f2e944666"
+  },
+  "data/raw/wikipedia/pageviews/Dear_Child.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Dear_Child/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:48:04+00:00",
+    "bytes": 105848,
+    "sha256": "1b8cf3437dc148a7bfec378641b16a61e394b6f7754e9a53b1c6876653a0c92b"
+  },
+  "data/raw/wikipedia/pageviews/Demon_Slayer%3A_Kimetsu_no_Yaiba_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Demon_Slayer%3A_Kimetsu_no_Yaiba_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:02:11+00:00",
+    "bytes": 201888,
+    "sha256": "584da0da860baa3b516a7ff7d93538f05aa97aef699fa5a025b6f97ead450f31"
+  },
+  "data/raw/wikipedia/pageviews/Dept._Q.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Dept._Q/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:49:06+00:00",
+    "bytes": 76497,
+    "sha256": "8b36cc15e08a0c24de863232c96561d97b63946c029f6560e49af80df436c42c"
+  },
+  "data/raw/wikipedia/pageviews/Desperate_Lies.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Desperate_Lies/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:49:02+00:00",
+    "bytes": 136272,
+    "sha256": "f4d3a9fb9d9a638e9d4e81f8d621c70bf7875a4f92fc9ca83100418e516c2188"
+  },
+  "data/raw/wikipedia/pageviews/Despicable_Me_%28film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Despicable_Me_%28film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:04:06+00:00",
+    "bytes": 207355,
+    "sha256": "f4959e28edd5f1ba6ab984a0cb7c061c8629e91c50235c718cdb5aa7cc2cd71e"
+  },
+  "data/raw/wikipedia/pageviews/Despicable_Me_2.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Despicable_Me_2/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:00:05+00:00",
+    "bytes": 200701,
+    "sha256": "e218581dd0230354a42df527893a8a862ab56a6517105cd3e1acb4e54d28d866"
+  },
+  "data/raw/wikipedia/pageviews/Despicable_Me_3.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Despicable_Me_3/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:56:10+00:00",
+    "bytes": 201017,
+    "sha256": "fa17c492281da4474f4f16b4d58e53df9bd6a10534a92182b3ff0c5ea727c79f"
+  },
+  "data/raw/wikipedia/pageviews/Despicable_Me_4.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Despicable_Me_4/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:59:07+00:00",
+    "bytes": 201407,
+    "sha256": "57f677f85418db26406bafac72e7ba8c88ebc753e597b9cb0886fb93e1a58a92"
+  },
+  "data/raw/wikipedia/pageviews/Destined_with_You.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Destined_with_You/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:54:02+00:00",
+    "bytes": 191613,
+    "sha256": "b7afcb26d9a28908723e67895204c96542c72315464fb457bb348ada7963a118"
+  },
+  "data/raw/wikipedia/pageviews/Dhurandhar.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Dhurandhar/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:57:00+00:00",
+    "bytes": 72337,
+    "sha256": "b7e6d9a775fdd595ad7556b2b6d97059d576f6f33fc12a492e07e71ae6ea64a2"
+  },
+  "data/raw/wikipedia/pageviews/Doctor_Slump_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Doctor_Slump_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:53:08+00:00",
+    "bytes": 211368,
+    "sha256": "5ff6c387cb13c27ca5ea155c65c5568fb5d337c7ecf5e987ae29dfef54d1cd99"
+  },
+  "data/raw/wikipedia/pageviews/Dynamite_Kiss.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Dynamite_Kiss/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:46:01+00:00",
+    "bytes": 59882,
+    "sha256": "d74cd28c62bca2c1d3378c9af31e4ae0c546287bf894a8ca11549895a56894b1"
+  },
+  "data/raw/wikipedia/pageviews/Elite_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Elite_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:01:08+00:00",
+    "bytes": 203486,
+    "sha256": "2cf228bba9af02e55e1211cf481205d5e23b58a1cad5f86b4a8ae341101412ab"
+  },
+  "data/raw/wikipedia/pageviews/Emily_in_Paris.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Emily_in_Paris/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:46:07+00:00",
+    "bytes": 200305,
+    "sha256": "afbc2e43c4a015c723d50f80dd9a44c5c3a1431959d244935dcb927f00ddac4b"
+  },
+  "data/raw/wikipedia/pageviews/Envious_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Envious_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:02:07+00:00",
+    "bytes": 124433,
+    "sha256": "9ef03a9fb70e45d0f8968185c49f780b07c8f0ce0cc9b1655dc00c38b50c22d9"
+  },
+  "data/raw/wikipedia/pageviews/Exterritorial.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Exterritorial/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:52:06+00:00",
+    "bytes": 83311,
+    "sha256": "6e312eacf1e534be2504cbcd6feeb1eba63908759197cb308b84678a989f0b69"
+  },
+  "data/raw/wikipedia/pageviews/Extraction_2.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Extraction_2/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:00:01+00:00",
+    "bytes": 197423,
+    "sha256": "7f1a550a3283c48d18b8c5c469963384b1736afbae546f1c9547b92a32a8c535"
+  },
+  "data/raw/wikipedia/pageviews/Fall_for_Me.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Fall_for_Me/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:00:03+00:00",
+    "bytes": 64570,
+    "sha256": "6a599b785c1356c0097e6716655207d3a50bdbb34ff83ff308cdbc5b627e298c"
+  },
+  "data/raw/wikipedia/pageviews/Family_Pack_%282024_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Family_Pack_%282024_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:01:11+00:00",
+    "bytes": 124628,
+    "sha256": "a96c906be5f5375d1f4d784dccce87651f5fef88fac557202edcd5639e5f4a27"
+  },
+  "data/raw/wikipedia/pageviews/Firebreak_%28film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Firebreak_%28film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:03:05+00:00",
+    "bytes": 34942,
+    "sha256": "b86a54154d51c2466d66ed8a8f7bdc01cb31257045e3e0bc5f466fa05741ea21"
+  },
+  "data/raw/wikipedia/pageviews/Fool_Me_Once_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Fool_Me_Once_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:43:22+00:00",
+    "bytes": 212126,
+    "sha256": "73ac33e4f3a5518b7a500e6a53637f3efd5de43befd3a366dfacbc28bc984c80"
+  },
+  "data/raw/wikipedia/pageviews/Forgotten_Love_%28film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Forgotten_Love_%28film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:58:06+00:00",
+    "bytes": 186692,
+    "sha256": "acc0b399ece00d1652e17343274528ead89435cf093fbfcea8c82195ee2d4d1d"
+  },
+  "data/raw/wikipedia/pageviews/Frankenstein_%282025_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Frankenstein_%282025_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:49:03+00:00",
+    "bytes": 116659,
+    "sha256": "2beeecf70c3857b31cfda443b20b83ab6b22cb0028600ae6e3677e5b535fc2ed"
+  },
+  "data/raw/wikipedia/pageviews/Furies_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Furies_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:56:11+00:00",
+    "bytes": 156992,
+    "sha256": "0fe9558ab5d4b7ee7849d6851b2cc7aada5b088a9d602c5f6757fa24b00b6c53"
+  },
+  "data/raw/wikipedia/pageviews/Gangs_of_Galicia.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Gangs_of_Galicia/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:00:09+00:00",
+    "bytes": 136149,
+    "sha256": "0a5df117a15c812a7b16ea4038c53629814073ad4bfcd3497aad2b8a81dde138"
+  },
+  "data/raw/wikipedia/pageviews/Genie%2C_Make_a_Wish.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Genie%2C_Make_a_Wish/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:48:00+00:00",
+    "bytes": 94331,
+    "sha256": "0e009f4f975f0fc2c14062c55677af8c9a64f29e9b14cb387bf885be43d33459"
+  },
+  "data/raw/wikipedia/pageviews/Ginny_%26_Georgia.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Ginny_%26_Georgia/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:43:24+00:00",
+    "bytes": 201510,
+    "sha256": "e46d5af6a9418c4e8f8735131dc10512c71fbe2349913cca7b4e5ea21ba78e21"
+  },
+  "data/raw/wikipedia/pageviews/Goat_%282026_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Goat_%282026_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:01:06+00:00",
+    "bytes": 98095,
+    "sha256": "3cb9a347dd0f35da1672b48767e10137c6ea1de572a0320e75c99121f8555979"
+  },
+  "data/raw/wikipedia/pageviews/Godzilla_Minus_One.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Godzilla_Minus_One/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:02:04+00:00",
+    "bytes": 198596,
+    "sha256": "e10ad74429a07a0dd197a6b854a4a65158e0d6d41b5df07d3a02022c0264bb8c"
+  },
+  "data/raw/wikipedia/pageviews/Griselda_%28miniseries%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Griselda_%28miniseries%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:45:02+00:00",
+    "bytes": 207959,
+    "sha256": "8634e45ad701cf16d3f6b60fa620587331a72839e213c03bc805ae1787443c3f"
+  },
+  "data/raw/wikipedia/pageviews/Gyeongseong_Creature.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Gyeongseong_Creature/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:53:10+00:00",
+    "bytes": 206788,
+    "sha256": "0f9ca6dbabf5b6b17b06ffcd7c6967656fefaf13e895f992731c3a57e31eb999"
+  },
+  "data/raw/wikipedia/pageviews/Happy_Gilmore_2.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Happy_Gilmore_2/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:49:05+00:00",
+    "bytes": 124187,
+    "sha256": "c553fcb9e35bd8e4bbbd9c5bdf26888f82818c479c86b9a88bc94ea26774ec4e"
+  },
+  "data/raw/wikipedia/pageviews/Havoc_%282025_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Havoc_%282025_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:54:07+00:00",
+    "bytes": 113582,
+    "sha256": "98303fea07ff1f57e13efe642b895de3ab0e48370d669e31aeb637ab5119dc21"
+  },
+  "data/raw/wikipedia/pageviews/Heart_of_Stone_%282023_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Heart_of_Stone_%282023_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:50:08+00:00",
+    "bytes": 214188,
+    "sha256": "2bacb6b3c8896ddfe8de57251ada6ff1bea7809b3f163b9eb806d41e24729f72"
+  },
+  "data/raw/wikipedia/pageviews/Heavenly_Ever_After.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Heavenly_Ever_After/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:59:13+00:00",
+    "bytes": 101332,
+    "sha256": "4ea60fa9646ca163b7b23da35ff227e2145afbe1e784510c2ba5d8f083f75cd7"
+  },
+  "data/raw/wikipedia/pageviews/His_%26_Hers_%282026_TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/His_%26_Hers_%282026_TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:44:09+00:00",
+    "bytes": 61693,
+    "sha256": "eed91b190d064916287ac3805f839127b9cfd2305eed20add646c0abcfb9d7d9"
+  },
+  "data/raw/wikipedia/pageviews/Home_%282015_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Home_%282015_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:02:01+00:00",
+    "bytes": 201901,
+    "sha256": "ab64430ff280ad0b19e3772813937e449fb6394836f77c9033a881fe3f3171dd"
+  },
+  "data/raw/wikipedia/pageviews/Hot_Wheels_Let%27s_Race.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hot_Wheels_Let%27s_Race/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:02:14+00:00",
+    "bytes": 161396,
+    "sha256": "4a9f894bd78a94c5d27013f152fe81bf6d84518ec49d139594829bed6b2215d0"
+  },
+  "data/raw/wikipedia/pageviews/Hotel_Transylvania_3%3A_Summer_Vacation.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hotel_Transylvania_3%3A_Summer_Vacation/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:03:11+00:00",
+    "bytes": 227068,
+    "sha256": "55256bd79d9bb5e17ae340ac8befa1b3a5cc8ed1d20077a3efa04839a6ad2ac0"
+  },
+  "data/raw/wikipedia/pageviews/How_the_Grinch_Stole_Christmas_%282000_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/How_the_Grinch_Stole_Christmas_%282000_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:02:13+00:00",
+    "bytes": 233790,
+    "sha256": "80631625d6c8f4cb4fad6e12c66990d1b50f5cf54854430ff476e887f60f88ff"
+  },
+  "data/raw/wikipedia/pageviews/How_to_Make_Millions_Before_Grandma_Dies.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/How_to_Make_Millions_Before_Grandma_Dies/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:05:04+00:00",
+    "bytes": 168494,
+    "sha256": "190bee4566baf3ddf90781a8defb9709f98991d7a2c9aae28f7203d19bdb37b7"
+  },
+  "data/raw/wikipedia/pageviews/IHostage.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/IHostage/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:58:12+00:00",
+    "bytes": 77244,
+    "sha256": "6862af04868c7606dbecbb4dbca5de95203969fd19800ba7467020722353f4d0"
+  },
+  "data/raw/wikipedia/pageviews/If_Wishes_Could_Kill.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/If_Wishes_Could_Kill/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:57:08+00:00",
+    "bytes": 31499,
+    "sha256": "6adbc1f8e6ec8eb9c8e598cc5c357663a53a02397689fde8ff49ba73729e03a3"
+  },
+  "data/raw/wikipedia/pageviews/Jack_Reacher%3A_Never_Go_Back.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Jack_Reacher%3A_Never_Go_Back/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:03:08+00:00",
+    "bytes": 215694,
+    "sha256": "09886a86ae137f5eb6bcf1db6fac847428b5e69004d62dbae8d64268d800b1d3"
+  },
+  "data/raw/wikipedia/pageviews/Jigra.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Jigra/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:05:03+00:00",
+    "bytes": 123840,
+    "sha256": "b45ba8b790dbaf587eababe43b6b65f18b1a52877743aab492dcb86c990ed2af"
+  },
+  "data/raw/wikipedia/pageviews/Jujutsu_Kaisen_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Jujutsu_Kaisen_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:04:04+00:00",
+    "bytes": 138857,
+    "sha256": "00e41eb10c342fdff5371a210a0b4dcc6acf774533aa9f61029505ec2ff092c5"
+  },
+  "data/raw/wikipedia/pageviews/KPop_Demon_Hunters.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/KPop_Demon_Hunters/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:43:18+00:00",
+    "bytes": 88297,
+    "sha256": "5efc702ae6d531828239bdf179151d2511ad511e10b61ed5a0e06afc2486e564"
+  },
+  "data/raw/wikipedia/pageviews/King_the_Land.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/King_the_Land/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:44:06+00:00",
+    "bytes": 198439,
+    "sha256": "247e8611bc70ddefc437814d15f6183516cc92f3cc001ff03ff81dd9c32f80cb"
+  },
+  "data/raw/wikipedia/pageviews/Ko_%28film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Ko_%28film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:00:13+00:00",
+    "bytes": 192982,
+    "sha256": "167d8d094e6fe5a9a17113073bb226f8a30470e087e6125f9583ce90ac76c3c2"
+  },
+  "data/raw/wikipedia/pageviews/La_Palma_%28miniseries%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/La_Palma_%28miniseries%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:49:13+00:00",
+    "bytes": 110867,
+    "sha256": "cf509d4b2b03e0dbbf42ca449499567e7e701ed49181c3b02afb72de9077d7fa"
+  },
+  "data/raw/wikipedia/pageviews/Laapataa_Ladies.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Laapataa_Ladies/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:04:07+00:00",
+    "bytes": 155838,
+    "sha256": "940403653a5a922e2a26a98ed268dbe3c22b35f7eed0deda46f1fdb1304465e1"
+  },
+  "data/raw/wikipedia/pageviews/Leave_the_World_Behind_%28film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Leave_the_World_Behind_%28film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:46:02+00:00",
+    "bytes": 218529,
+    "sha256": "5c806f5c279023be2772b409e620aee68f831c295d36498d3e24e523fac8e92d"
+  },
+  "data/raw/wikipedia/pageviews/Leo_%282023_Indian_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Leo_%282023_Indian_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:50:02+00:00",
+    "bytes": 210230,
+    "sha256": "3af95e329c71c0845a6180693a13382ea2725c461e98afa28e7a73624d67ea7f"
+  },
+  "data/raw/wikipedia/pageviews/Lift_%282024_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Lift_%282024_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:51:12+00:00",
+    "bytes": 201955,
+    "sha256": "ad2a40800580bb68253fb35d0a46c38302896a6f8c48ac03d837c0b45396db46"
+  },
+  "data/raw/wikipedia/pageviews/Love_Is_Blind_%28American_TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Love_Is_Blind_%28American_TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:44:07+00:00",
+    "bytes": 76206,
+    "sha256": "dc8f592d77203c1660bb2bb705a68e3763b3f4231eb8eb4ad03be6463b2e0b4d"
+  },
+  "data/raw/wikipedia/pageviews/Love_Next_Door.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Love_Next_Door/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:45:04+00:00",
+    "bytes": 141940,
+    "sha256": "5a2889de92c95c08a47560c6a9d282b11edbd595079224fb0295df6062acf13f"
+  },
+  "data/raw/wikipedia/pageviews/Love_Untangled.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Love_Untangled/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:03:11+00:00",
+    "bytes": 108205,
+    "sha256": "eb6f8f87283b8b330398a756f77d246a72dc9d112620811acb6f75bdfbadb5ea"
+  },
+  "data/raw/wikipedia/pageviews/Lucky_Baskhar.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Lucky_Baskhar/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:03:04+00:00",
+    "bytes": 136244,
+    "sha256": "f733eb815a0820db68520bdcfa7bc2f6a61d870de4d996afcb6587565ebaa75a"
+  },
+  "data/raw/wikipedia/pageviews/Lupin_%28French_TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Lupin_%28French_TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:47:08+00:00",
+    "bytes": 211964,
+    "sha256": "4502816b3e28b299ea549da7a5920ef792b6ae427cf2db9ff1ded067719132fd"
+  },
+  "data/raw/wikipedia/pageviews/Madagascar_%282005_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Madagascar_%282005_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:04:11+00:00",
+    "bytes": 209953,
+    "sha256": "9adf54fb211452689051d507fe900b1beacc48be827273edf5946e2e570fcb9e"
+  },
+  "data/raw/wikipedia/pageviews/Maharaja_%282024_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Maharaja_%282024_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:03:06+00:00",
+    "bytes": 142947,
+    "sha256": "0fb86a859316ee77d9a6638634dd4191d4d8ebfb86e811642f7595c55d33c1c2"
+  },
+  "data/raw/wikipedia/pageviews/Man_on_Fire_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Man_on_Fire_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:50:07+00:00",
+    "bytes": 45268,
+    "sha256": "071b5996c72f0e3569e92adabf0e9ac993efbbc02e750973fd4bdbcffb6660cd"
+  },
+  "data/raw/wikipedia/pageviews/Mercy_for_None.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Mercy_for_None/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:58:08+00:00",
+    "bytes": 106019,
+    "sha256": "6d2d440488996c645a68e874d08f14522796620a9442e5892249385a531b6f5d"
+  },
+  "data/raw/wikipedia/pageviews/Minions%3A_The_Rise_of_Gru.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Minions%3A_The_Rise_of_Gru/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:04:03+00:00",
+    "bytes": 212238,
+    "sha256": "b537c60077af24c5d8cd65e5745b99ed4507df6a844ff874ab3473cd8d01bc15"
+  },
+  "data/raw/wikipedia/pageviews/Minions_%28film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Minions_%28film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:57:10+00:00",
+    "bytes": 200249,
+    "sha256": "a29aff9eff8d025f8d665535c77e05eceb691b5d4a70f65b9c339dd4424a79fb"
+  },
+  "data/raw/wikipedia/pageviews/Miss_Night_and_Day.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Miss_Night_and_Day/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:52:14+00:00",
+    "bytes": 145281,
+    "sha256": "fb19585897e166611f1088134cdab9b65fb7de92635982147d74ab95c7dbf974"
+  },
+  "data/raw/wikipedia/pageviews/Mission%3A_Cross.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Mission%3A_Cross/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:05:01+00:00",
+    "bytes": 127178,
+    "sha256": "042e73e494c700599cd419f7c3d9abb7a9bf39e0c5fd115a1a1f1a1da6cb1d98"
+  },
+  "data/raw/wikipedia/pageviews/Monster%3A_The_Ed_Gein_Story.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Monster%3A_The_Ed_Gein_Story/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:43:59+00:00",
+    "bytes": 70115,
+    "sha256": "e0871a603c1a8443923c6ec635c646ca26a48ffe71ae22010a56b43ee38ceef8"
+  },
+  "data/raw/wikipedia/pageviews/Mother_of_the_Bride_%282024_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Mother_of_the_Bride_%282024_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:56:14+00:00",
+    "bytes": 175719,
+    "sha256": "6b68acea95e0a3d47a431e56f96fca13a4220af63313d61a792ec3e490855127"
+  },
+  "data/raw/wikipedia/pageviews/My_Demon.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/My_Demon/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:45:05+00:00",
+    "bytes": 173371,
+    "sha256": "6d5dfebe0f03bb2cd05162cfc6c75134bb36cc58bdf57c0550cfe9cf740d5ace"
+  },
+  "data/raw/wikipedia/pageviews/My_Life_with_the_Walter_Boys.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/My_Life_with_the_Walter_Boys/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:45:00+00:00",
+    "bytes": 217088,
+    "sha256": "33356ee96cae28135fd438eb1bbe54ca2209197d17911b2d79d457d0b28a1da8"
+  },
+  "data/raw/wikipedia/pageviews/My_Royal_Nemesis.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/My_Royal_Nemesis/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:47:09+00:00",
+    "bytes": 32285,
+    "sha256": "eeb82453c5464c7b75641726ef87108ec7a314e01018732ea66447c1ae254737"
+  },
+  "data/raw/wikipedia/pageviews/Nemesis_%282026_TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Nemesis_%282026_TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:48:08+00:00",
+    "bytes": 39507,
+    "sha256": "6839050fdc2d06e74bae1de1afb20bbcb1184e1ab18e1cb69faac4729ff3d5b9"
+  },
+  "data/raw/wikipedia/pageviews/No_Tail_to_Tell.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/No_Tail_to_Tell/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:04:00+00:00",
+    "bytes": 48185,
+    "sha256": "c3d40d487eae90e21ee618c9aa840a49f755a802fe868a1822aab01267cdd551"
+  },
+  "data/raw/wikipedia/pageviews/Nobody_Wants_This.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Nobody_Wants_This/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:48:08+00:00",
+    "bytes": 145041,
+    "sha256": "719f16cb833cf7b8fb532f90120dd4bc2aa78821750c68c6458773811a7a77b5"
+  },
+  "data/raw/wikipedia/pageviews/Nonnas.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Nonnas/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:57:11+00:00",
+    "bytes": 183339,
+    "sha256": "417f0469672958688037afab11f4e4bf3dc2db84aa86bd65736840e24083bb04"
+  },
+  "data/raw/wikipedia/pageviews/Nowhere_%282023_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Nowhere_%282023_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:53:03+00:00",
+    "bytes": 194380,
+    "sha256": "00f1db1fcd90b7d56e9feec9d23db73a35b913101fd57c36911d3ebad60dd9b8"
+  },
+  "data/raw/wikipedia/pageviews/Obliterated.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Obliterated/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:50:04+00:00",
+    "bytes": 195486,
+    "sha256": "ef85f4d0c876fd51f297b9e428d5cb848144a8cef5b3c4eb776aeb043165cd63"
+  },
+  "data/raw/wikipedia/pageviews/Olympo.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Olympo/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:56:06+00:00",
+    "bytes": 72223,
+    "sha256": "d81d94f983939c2d0bc2ebd4f8e160fff755edf817bee37f73718179132d365e"
+  },
+  "data/raw/wikipedia/pageviews/One_Day_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/One_Day_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:49:00+00:00",
+    "bytes": 205906,
+    "sha256": "c27b84529a6b101f466be4d815502e9efb94a54a6fca38fd9103d2e13256c752"
+  },
+  "data/raw/wikipedia/pageviews/One_Piece_%281999_TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/One_Piece_%281999_TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:46:00+00:00",
+    "bytes": 200865,
+    "sha256": "8f29a5bb036abf59a171affe50c1210f7e41de394324582ec2440033bdacd92b"
+  },
+  "data/raw/wikipedia/pageviews/One_Piece_%282023_TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/One_Piece_%282023_TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:43:25+00:00",
+    "bytes": 214920,
+    "sha256": "71a440eff714abaa7494ac0d69878b60f356b0127f6f59dbd0de150a308eddf8"
+  },
+  "data/raw/wikipedia/pageviews/Os_Donos_do_Jogo.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Os_Donos_do_Jogo/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:54:00+00:00",
+    "bytes": 48790,
+    "sha256": "b7794dd1a0ee4bdb3b3926b4a993f5ef8253bf0df7d4cd06e6959c04ac6dad1d"
+  },
+  "data/raw/wikipedia/pageviews/Our_Little_Secret_%28film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Our_Little_Secret_%28film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:55:03+00:00",
+    "bytes": 170416,
+    "sha256": "da09f6f093f0680217e5d3c2824bc36d2d426019a1358666631ac3facb90ab59"
+  },
+  "data/raw/wikipedia/pageviews/Our_Unwritten_Seoul.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Our_Unwritten_Seoul/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:54:11+00:00",
+    "bytes": 89612,
+    "sha256": "2aef1bf040daa77a54600c7cd397f21744f7bc8f8eb498c68b0dfe4c3ce84291"
+  },
+  "data/raw/wikipedia/pageviews/Outer_Banks_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Outer_Banks_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:46:05+00:00",
+    "bytes": 211224,
+    "sha256": "879b7571a57329bbbc7963e04b784799fba93190eae34fc9c9cb73583336bff8"
+  },
+  "data/raw/wikipedia/pageviews/Painkiller_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Painkiller_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:54:03+00:00",
+    "bytes": 209108,
+    "sha256": "db860149bf337659c7721c6eb52ccacbfc4f75990ba937990b4cf2faca2ac533"
+  },
+  "data/raw/wikipedia/pageviews/Paw_Patrol%3A_The_Mighty_Movie.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Paw_Patrol%3A_The_Mighty_Movie/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:05:00+00:00",
+    "bytes": 136487,
+    "sha256": "7e1c9af0d214942ea946031154bc2e628f69d15ab689c58833fbfe97caf5aec1"
+  },
+  "data/raw/wikipedia/pageviews/Paw_Patrol%3A_The_Movie.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Paw_Patrol%3A_The_Movie/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:01:12+00:00",
+    "bytes": 165944,
+    "sha256": "7b4ea2b349dbc3b733068252b93e8b3dccddc61d364c75aade6c711757274a64"
+  },
+  "data/raw/wikipedia/pageviews/Phantom_Lawyer.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Phantom_Lawyer/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:02:00+00:00",
+    "bytes": 38569,
+    "sha256": "42f6e3871cdbe81fe8893f2db8c3ea72cfde62d6106e2c3bd2ffc5d386b1b7d2"
+  },
+  "data/raw/wikipedia/pageviews/Prison_Break.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Prison_Break/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:44:01+00:00",
+    "bytes": 197862,
+    "sha256": "538627ede2a3aafe6f7612cdba2fc5ac638d711c4541ad717af94ea0b6eeb787"
+  },
+  "data/raw/wikipedia/pageviews/Puss_in_Boots%3A_The_Last_Wish.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Puss_in_Boots%3A_The_Last_Wish/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:02:05+00:00",
+    "bytes": 217250,
+    "sha256": "40e1231dfdc8bddd88a0cf86df1d7a6c7167a7c89e477fb47baa505f1d0a0480"
+  },
+  "data/raw/wikipedia/pageviews/Queen_of_Tears.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Queen_of_Tears/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:43:21+00:00",
+    "bytes": 187464,
+    "sha256": "95d6439ff72fd66d592608a4f6acd3afcede425a02c8c864f62b6bf8bb6b29ab"
+  },
+  "data/raw/wikipedia/pageviews/Ragnarok_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Ragnarok_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:59:05+00:00",
+    "bytes": 206589,
+    "sha256": "f5b652b071eb501621d26f1edee670b1b8702cb6e70b4a518d9328725e0e7d7d"
+  },
+  "data/raw/wikipedia/pageviews/Raising_Voices_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Raising_Voices_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:53:01+00:00",
+    "bytes": 150299,
+    "sha256": "9395ed73944fce161c824c814f18d1dae81c6f4b6fb8568966caea61e3a8f9a3"
+  },
+  "data/raw/wikipedia/pageviews/Rebel_Moon.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Rebel_Moon/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:50:12+00:00",
+    "bytes": 195528,
+    "sha256": "9318a5808005956c6dbb391c1a1b4ae9d5b57bc9f6e26cdce8c12315ba559d27"
+  },
+  "data/raw/wikipedia/pageviews/Rebel_Ridge.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Rebel_Ridge/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:48:11+00:00",
+    "bytes": 196174,
+    "sha256": "73232e5005c4cd612feb0f87171bec12a895df94e3409768bfd4daeef040dab8"
+  },
+  "data/raw/wikipedia/pageviews/Reptile_%28film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Reptile_%28film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:54:10+00:00",
+    "bytes": 199814,
+    "sha256": "563b2dfa72095f9fa54e9cfd0af4358b52e8f11048c49d128c9d1c51a740bffe"
+  },
+  "data/raw/wikipedia/pageviews/Resident_Alien_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Resident_Alien_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:01:05+00:00",
+    "bytes": 214847,
+    "sha256": "71215f6409beecc8f57b3e4793d33c046e5b7e22f7617cd79a4783779339b5fe"
+  },
+  "data/raw/wikipedia/pageviews/Resident_Playbook.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Resident_Playbook/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:54:12+00:00",
+    "bytes": 129026,
+    "sha256": "91e0c305eb196903220bf38f937a323005558318a875597335d016edd3212407"
+  },
+  "data/raw/wikipedia/pageviews/Romance_in_the_House.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Romance_in_the_House/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:00:07+00:00",
+    "bytes": 137621,
+    "sha256": "e1f8fba6b1c8334d3145fe08914acac144516f8a70c8fd277bb13bd41501c64c"
+  },
+  "data/raw/wikipedia/pageviews/Running_Point.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Running_Point/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:51:08+00:00",
+    "bytes": 126743,
+    "sha256": "6344c633081ce22c3f3cfb117a9dc18970c9a6ad19c4a6436613943e945f6b85"
+  },
+  "data/raw/wikipedia/pageviews/Senna_%28miniseries%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Senna_%28miniseries%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:58:03+00:00",
+    "bytes": 153560,
+    "sha256": "c5e38f7091ea5ae4ec81e61d89585ab513dcb7bb11d17b64170645a91ce587c9"
+  },
+  "data/raw/wikipedia/pageviews/Sex_Education_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Sex_Education_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:45:13+00:00",
+    "bytes": 213702,
+    "sha256": "f0c29b21b1aefd093b66f6163b0e6cafa8f2cc0ca1237f9d2916948127c61cbd"
+  },
+  "data/raw/wikipedia/pageviews/Shrek.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Shrek/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:01:09+00:00",
+    "bytes": 189323,
+    "sha256": "e13181f237acfb03375acb0124a18b613c33fe7be396f0c2454048afb54b1f4e"
+  },
+  "data/raw/wikipedia/pageviews/Sing_%282016_American_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Sing_%282016_American_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:00:04+00:00",
+    "bytes": 213579,
+    "sha256": "dd6cbb80def77f6a54e0e34be25d816c68b473aa729fb07e74b29a23e60be32a"
+  },
+  "data/raw/wikipedia/pageviews/Single%27s_Inferno.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Single%27s_Inferno/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:58:00+00:00",
+    "bytes": 201772,
+    "sha256": "c9cd697f009d157ceb2ed0feb7f3810de5d349e4a9022ffa59f4528ef511655c"
+  },
+  "data/raw/wikipedia/pageviews/Sirens_%282025_TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Sirens_%282025_TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:47:02+00:00",
+    "bytes": 97055,
+    "sha256": "f9ce4430ccf5b16e2b97c05fddf7a9dfadce20643ed05797f03d1e81780ae1d9"
+  },
+  "data/raw/wikipedia/pageviews/Society_of_the_Snow.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Society_of_the_Snow/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:48:06+00:00",
+    "bytes": 205773,
+    "sha256": "a7c7342d03622efaf0552210408ab9210f0a9b9425bac07c40acded28960c412"
+  },
+  "data/raw/wikipedia/pageviews/Sold_Out_on_You.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Sold_Out_on_You/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:54:08+00:00",
+    "bytes": 41105,
+    "sha256": "003bbf5159de306c45cef305d448d7769fbf477c519ef00003c88f0473773c8f"
+  },
+  "data/raw/wikipedia/pageviews/Squid_Game%3A_The_Challenge.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Squid_Game%3A_The_Challenge/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:47:04+00:00",
+    "bytes": 198630,
+    "sha256": "a384b8856dc9ce6a9b8a62ca09748a756798cfc03c470f56971996eaec1607cc"
+  },
+  "data/raw/wikipedia/pageviews/Squid_Game.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Squid_Game/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:43:14+00:00",
+    "bytes": 195600,
+    "sha256": "eb9c0b6fe0ecfd54f39a2da5912aa5f3f4d2642323fd83f76660d6d393b40edd"
+  },
+  "data/raw/wikipedia/pageviews/Stranger_Things.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Stranger_Things/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:43:17+00:00",
+    "bytes": 202115,
+    "sha256": "e27e5d7e303313b708cf078652031d441b9bda9d2e05ef2ff9c71557c86c992c"
+  },
+  "data/raw/wikipedia/pageviews/Straw_%28film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Straw_%28film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:50:11+00:00",
+    "bytes": 82959,
+    "sha256": "fe4a512cf2de94d96132db902bf3383ee0ea65afe0613ba2b3a0d7a2a5aaa76e"
+  },
+  "data/raw/wikipedia/pageviews/Strong_Girl_Nam-soon.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Strong_Girl_Nam-soon/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:51:14+00:00",
+    "bytes": 191519,
+    "sha256": "1faf7e0bc26660a70fdcf2862a5e7359ec82be88d49eae6622fb008ed2a0d6bf"
+  },
+  "data/raw/wikipedia/pageviews/Supacell.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Supacell/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:52:00+00:00",
+    "bytes": 186447,
+    "sha256": "011f89b9808edf85ae9d23fbdf3cdf2f8aee9ae709aaa449ba97ec7226c1f3b6"
+  },
+  "data/raw/wikipedia/pageviews/Swapped.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Swapped/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:49:07+00:00",
+    "bytes": 40358,
+    "sha256": "e8fa0b0c5372805926bbdbd02700340f7cc966c2d8e964c8dca4676c5782abb2"
+  },
+  "data/raw/wikipedia/pageviews/Tastefully_Yours.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tastefully_Yours/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:55:10+00:00",
+    "bytes": 101391,
+    "sha256": "3a2b49d7ea6d881d132c95d4b24944c5e900d58e682c942b1bbd3d6c4b5c17aa"
+  },
+  "data/raw/wikipedia/pageviews/That_Christmas.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/That_Christmas/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:57:13+00:00",
+    "bytes": 199172,
+    "sha256": "334de094ef87b92ce4983b3cfc36ccacea2b1bfaf18731c46cf194c7c554b8ff"
+  },
+  "data/raw/wikipedia/pageviews/The_8_Show.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_8_Show/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:59:12+00:00",
+    "bytes": 147720,
+    "sha256": "13804e6984c27c7f75add855242b81f811be5bb69543720d4e3e7807ff830578"
+  },
+  "data/raw/wikipedia/pageviews/The_Accident_%28Mexican_TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Accident_%28Mexican_TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:47:01+00:00",
+    "bytes": 89055,
+    "sha256": "cac1a61233ce2ec1d6cf10788e3a9a4bde995d526a9ab0c2f2a8216ed2126911"
+  },
+  "data/raw/wikipedia/pageviews/The_Asunta_Case.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Asunta_Case/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:53:07+00:00",
+    "bytes": 150335,
+    "sha256": "5fe52c06622cd6aa1330ba2c7a192a5483326c57c325cdff51d874cdab43f59e"
+  },
+  "data/raw/wikipedia/pageviews/The_Atypical_Family.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Atypical_Family/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:57:07+00:00",
+    "bytes": 153012,
+    "sha256": "d4ed86d60e99ba8b2ff3ea1fa99cddabb98a4181595d554436a3863644de2ec4"
+  },
+  "data/raw/wikipedia/pageviews/The_Beast_in_Me_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Beast_in_Me_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:47:10+00:00",
+    "bytes": 130837,
+    "sha256": "d7482355612f26163be95ff9fa1518d3e57f8bc879e31a3c665c59040d1d36b4"
+  },
+  "data/raw/wikipedia/pageviews/The_Boss_Baby.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Boss_Baby/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:59:15+00:00",
+    "bytes": 198614,
+    "sha256": "6b53eff704148ace3f7ace43a473c01ad4142b23f9b5d0b06304db7a5a1ffd1a"
+  },
+  "data/raw/wikipedia/pageviews/The_Brothers_Sun.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Brothers_Sun/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:55:12+00:00",
+    "bytes": 201528,
+    "sha256": "cf57e5da5d8abb3f373a405d83cf8638cf224d2bd7d45d9419fe5fb73c425039"
+  },
+  "data/raw/wikipedia/pageviews/The_Children%27s_Train.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Children%27s_Train/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:02:08+00:00",
+    "bytes": 122842,
+    "sha256": "63f72051ba45d65aafb37b0c8105b41d9ee5afecb2f470dbf81703e86b11dd0d"
+  },
+  "data/raw/wikipedia/pageviews/The_Courier_%282020_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Courier_%282020_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:03:59+00:00",
+    "bytes": 210096,
+    "sha256": "91ece1cfd9b95943afef6a6156b44d475b03037332f71bdf62186484f2cb31a2"
+  },
+  "data/raw/wikipedia/pageviews/The_Croods.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Croods/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:04:08+00:00",
+    "bytes": 194669,
+    "sha256": "760d005d954d7cbf7b6e89c8745397770f1191b59f6c370fcf4cf536dfcfd3c6"
+  },
+  "data/raw/wikipedia/pageviews/The_Crown_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Crown_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:48:02+00:00",
+    "bytes": 208813,
+    "sha256": "c01117f530c75f12a1ab84a5318827b04f0039af11794062bd5fc54d6e0e5df4"
+  },
+  "data/raw/wikipedia/pageviews/The_Empress_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Empress_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:57:15+00:00",
+    "bytes": 210814,
+    "sha256": "df857f730707d43dc38091c7f9920dc7edb16f11fa83c5bf65c9cc42e137f82e"
+  },
+  "data/raw/wikipedia/pageviews/The_Eternaut_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Eternaut_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:53:15+00:00",
+    "bytes": 206278,
+    "sha256": "53686f0877fc8041dbefd226980c032994882333c3a0f9750f7b41431566ff5e"
+  },
+  "data/raw/wikipedia/pageviews/The_Four_Seasons_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Four_Seasons_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:52:11+00:00",
+    "bytes": 89637,
+    "sha256": "1c74127ecaaa489f21d4530455e4709df1abab265625296745e4a35fec02086d"
+  },
+  "data/raw/wikipedia/pageviews/The_Gardener_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Gardener_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:55:02+00:00",
+    "bytes": 92650,
+    "sha256": "299b49d2ee1ecae21783c281e480aaa1cc7fc71acf9ccb8db5a3458d3c3ae48b"
+  },
+  "data/raw/wikipedia/pageviews/The_Gentlemen_%282024_TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Gentlemen_%282024_TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:44:05+00:00",
+    "bytes": 184129,
+    "sha256": "bba2f793b769c9bd9856fdd330bb250384e4318e5da2809b07f5734948ecf17b"
+  },
+  "data/raw/wikipedia/pageviews/The_Great_Flood_%28film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Great_Flood_%28film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:53:13+00:00",
+    "bytes": 106189,
+    "sha256": "73938244d6b8a812ef3362e299d6edf1861bdf08d36d8cb3b71dbe1e398ef117"
+  },
+  "data/raw/wikipedia/pageviews/The_Great_Indian_Kapil_Show.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Great_Indian_Kapil_Show/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:04:09+00:00",
+    "bytes": 166877,
+    "sha256": "e8c5c4ef01f5259c8cbedc3177664fc8a732cb60952a05aead5a72c665a8a073"
+  },
+  "data/raw/wikipedia/pageviews/The_Grinch_%28film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Grinch_%28film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:52:12+00:00",
+    "bytes": 203089,
+    "sha256": "da49e46100e6d11cb0b67d829f67a78c846c430c9c90556783d14b69ebfae817"
+  },
+  "data/raw/wikipedia/pageviews/The_Hunting_Wives.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Hunting_Wives/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:55:00+00:00",
+    "bytes": 154584,
+    "sha256": "5854e37d35473dcc9d38f4dff73e944bc51bfd3d668ddfc2bda2710c94b34734"
+  },
+  "data/raw/wikipedia/pageviews/The_Life_List.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Life_List/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:52:03+00:00",
+    "bytes": 118854,
+    "sha256": "037a27da91d7efdbe0b34c55102e9bd20dbe76fed3f9ed297b8aff6311398b93"
+  },
+  "data/raw/wikipedia/pageviews/The_Lincoln_Lawyer_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Lincoln_Lawyer_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:48:03+00:00",
+    "bytes": 219816,
+    "sha256": "5799846e816a0703fe4a82064cde8bc27987973f9ece279a7a193978535c6826"
+  },
+  "data/raw/wikipedia/pageviews/The_Madness_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Madness_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:47:11+00:00",
+    "bytes": 131341,
+    "sha256": "5036676686bea7b6140391e623843f9750c5bc40503478d7e5859bdac4dfea75"
+  },
+  "data/raw/wikipedia/pageviews/The_Night_Agent.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Night_Agent/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:44:08+00:00",
+    "bytes": 201555,
+    "sha256": "be6c68855aa9d08597ac8618a490e1990bd56788fd8fe202ae8537cac9fbdfe4"
+  },
+  "data/raw/wikipedia/pageviews/The_Perfect_Couple_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Perfect_Couple_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:45:07+00:00",
+    "bytes": 219313,
+    "sha256": "ac85e50cb9a48dca5dbe1215a73271898cb333c0f6b6bd35b96feb1d513c079b"
+  },
+  "data/raw/wikipedia/pageviews/The_Platform_2.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Platform_2/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:01:03+00:00",
+    "bytes": 132645,
+    "sha256": "c841bb00e8602c9e0feebe640164c58772ebd4481fb568316ca7d5a55654369c"
+  },
+  "data/raw/wikipedia/pageviews/The_Rip_%28film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Rip_%28film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:49:09+00:00",
+    "bytes": 79766,
+    "sha256": "7d36470b55964f8e1e0fb53dc7eac20f9a972624ee9b88291b1c9454ee274cfe"
+  },
+  "data/raw/wikipedia/pageviews/The_Sandman_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Sandman_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:54:14+00:00",
+    "bytes": 211231,
+    "sha256": "7242acc52fb59db9134e034a457c108a1f695a92c2974326943382c22b19adb8"
+  },
+  "data/raw/wikipedia/pageviews/The_Secret_Life_of_Pets.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Secret_Life_of_Pets/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:03:09+00:00",
+    "bytes": 210532,
+    "sha256": "9d075598d0328fa39b9c86000a43e8879e7fabc5f5ebaad05565e930c3b41e3f"
+  },
+  "data/raw/wikipedia/pageviews/The_Secret_Life_of_Pets_2.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Secret_Life_of_Pets_2/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:00:15+00:00",
+    "bytes": 212692,
+    "sha256": "4a807a508d9f2d9eb77da7fe03fe48b68ca1cb9d5ea766c6e7c759dbbe12035d"
+  },
+  "data/raw/wikipedia/pageviews/The_Super_Mario_Bros._Movie.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Super_Mario_Bros._Movie/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:52:02+00:00",
+    "bytes": 216244,
+    "sha256": "38fce5a753c84f1015d178595e9d58dece7b674d3daa04eaf685b5e875c4567e"
+  },
+  "data/raw/wikipedia/pageviews/The_Tailor_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Tailor_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:56:08+00:00",
+    "bytes": 208716,
+    "sha256": "5e9e6c8ed9adebc33f09bf5316b9c4bc33b2f7b210c05b498c4f058cd473b6be"
+  },
+  "data/raw/wikipedia/pageviews/The_Tearsmith.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Tearsmith/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:59:03+00:00",
+    "bytes": 148126,
+    "sha256": "8c9d2c6a87cc15624281220bdfc564d057a0ecc03925339870e2e0bcbbad149f"
+  },
+  "data/raw/wikipedia/pageviews/The_Tourist_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Tourist_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:57:05+00:00",
+    "bytes": 210395,
+    "sha256": "e37522a808ed7ae77411d5c42a44116c1eb8258c1ba411b2bae943f1f5918db3"
+  },
+  "data/raw/wikipedia/pageviews/The_Trauma_Code%3A_Heroes_on_Call.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Trauma_Code%3A_Heroes_on_Call/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:51:06+00:00",
+    "bytes": 115569,
+    "sha256": "e7c15336fdbc3433fa755452c8ccd79bf98025c0eebd8b53909ff228fbeeff4f"
+  },
+  "data/raw/wikipedia/pageviews/The_Umbrella_Academy_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Umbrella_Academy_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:55:08+00:00",
+    "bytes": 222134,
+    "sha256": "45591b10b53dd47d9209b6bd5ded51064a24261bedb5830c1c88257b1092f82c"
+  },
+  "data/raw/wikipedia/pageviews/The_Union_%282024_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Union_%282024_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:50:10+00:00",
+    "bytes": 165899,
+    "sha256": "4e32f0334f7b2aa314444b2ec7faf8a507465901aacfe15559b90f804b930336"
+  },
+  "data/raw/wikipedia/pageviews/The_Wages_of_Fear_%282024_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Wages_of_Fear_%282024_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:00:07+00:00",
+    "bytes": 70762,
+    "sha256": "d54c7ff9ad9488239d3e34f475a1e5170cf0adcbc089810c1c6d585d880a923f"
+  },
+  "data/raw/wikipedia/pageviews/The_Waterfront_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Waterfront_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:50:01+00:00",
+    "bytes": 86960,
+    "sha256": "618231c7838ee012ced5b8db516eedae7552eb6bb83b865d313a1c0683598670"
+  },
+  "data/raw/wikipedia/pageviews/The_Witcher_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Witcher_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:45:11+00:00",
+    "bytes": 211327,
+    "sha256": "d77f254604caa8b577ccb5a7ff5b540cf9758bf2247e596c5612c9ad4de3e8fe"
+  },
+  "data/raw/wikipedia/pageviews/The_Woman_in_Cabin_10_%28film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Woman_in_Cabin_10_%28film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:56:13+00:00",
+    "bytes": 37858,
+    "sha256": "5a794aaafe7b9734fc28de6582c919b97795ffabe550b723f2dd2dee54a2f1e5"
+  },
+  "data/raw/wikipedia/pageviews/The_Wonderfools.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_Wonderfools/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:52:05+00:00",
+    "bytes": 89274,
+    "sha256": "ec0ab2133b782e3d2a91e6fa588b5200014c1c8f3b6d4cf9e78128ec53d8fbb1"
+  },
+  "data/raw/wikipedia/pageviews/Tokyo_Swindlers.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tokyo_Swindlers/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:04:02+00:00",
+    "bytes": 130805,
+    "sha256": "1e3fe568254440405f55ca51a1ac7c3c7f762a930cc07dbf62004b857abbf88a"
+  },
+  "data/raw/wikipedia/pageviews/Troll_2_%282025_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Troll_2_%282025_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:59:08+00:00",
+    "bytes": 93736,
+    "sha256": "4972a39b97d06ca66ffceeab1d851d38f47dfc7d17722882696c7e9bb102c02b"
+  },
+  "data/raw/wikipedia/pageviews/Trolls_Band_Together.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Trolls_Band_Together/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:03:03+00:00",
+    "bytes": 207105,
+    "sha256": "b95717873cb2d92359de1ea639e93f366278fcee49e23dd14d7d33ac7a4e5f9e"
+  },
+  "data/raw/wikipedia/pageviews/Trouble_%282024_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Trouble_%282024_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:03:01+00:00",
+    "bytes": 80300,
+    "sha256": "8e2ad6914d9d361fe965dadd77b8fca508517434631c3cc5fe845287a7d196ad"
+  },
+  "data/raw/wikipedia/pageviews/True_Beauty_%28South_Korean_TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/True_Beauty_%28South_Korean_TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:49:11+00:00",
+    "bytes": 226642,
+    "sha256": "7c04a121c8dca680fbce009a75ec5cc532ba4af9118feddbb0b4f8b11a0404aa"
+  },
+  "data/raw/wikipedia/pageviews/Under_Paris.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Under_Paris/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:51:00+00:00",
+    "bytes": 145130,
+    "sha256": "308fa3e57e05fe3f6b0c81619f68a1d3a5e52b663855cf292d38172d40583702"
+  },
+  "data/raw/wikipedia/pageviews/Undercover_Miss_Hong.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Undercover_Miss_Hong/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:01:00+00:00",
+    "bytes": 50189,
+    "sha256": "5ea4753156f4544f533c02cb076ec11238b2784950258fa609198429cce0e20c"
+  },
+  "data/raw/wikipedia/pageviews/Unfamiliar.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Unfamiliar/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:55:11+00:00",
+    "bytes": 15454,
+    "sha256": "89ed0901245702d529a7504eeeac97599641fbff58fbd224e6683fc3b6e2cfc1"
+  },
+  "data/raw/wikipedia/pageviews/Unspeakable_Sins.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Unspeakable_Sins/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:49:08+00:00",
+    "bytes": 69800,
+    "sha256": "6c37e9ef916d7cdf6dcdab0ac0cc13464ed76acb28aaa630ad9321a977bcd849"
+  },
+  "data/raw/wikipedia/pageviews/Untamed_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Untamed_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:44:10+00:00",
+    "bytes": 93776,
+    "sha256": "5cb1189f26de30bcd6e2a28d3fe207cc2fb12db623dd5339f8f80cd550a8c75e"
+  },
+  "data/raw/wikipedia/pageviews/Vikings%3A_Valhalla.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Vikings%3A_Valhalla/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:56:05+00:00",
+    "bytes": 203801,
+    "sha256": "b800c105718fd97d88ba7fbc08fd5bf01f758298da905d6cf2e2051094075d79"
+  },
+  "data/raw/wikipedia/pageviews/Virgin_River_%28TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Virgin_River_%28TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:46:13+00:00",
+    "bytes": 212454,
+    "sha256": "a45a4fdc19bf6109abc52f5f0b9b490ce521fd12ed5e1daaf5c1c25e94f8c34a"
+  },
+  "data/raw/wikipedia/pageviews/Wake_Up_Dead_Man.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Wake_Up_Dead_Man/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:53:05+00:00",
+    "bytes": 183959,
+    "sha256": "42115355cf2635498df0c3b8341a458577c2f2dd6c797287c3d5318878f0eac0"
+  },
+  "data/raw/wikipedia/pageviews/War_Machine_%282026_film%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/War_Machine_%282026_film%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:48:10+00:00",
+    "bytes": 45729,
+    "sha256": "ebe80e3dfdc682a003d5187f41ae649a37386da0ad789af777f24878cb782ed3"
+  },
+  "data/raw/wikipedia/pageviews/Wayward_%28miniseries%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Wayward_%28miniseries%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:50:05+00:00",
+    "bytes": 137904,
+    "sha256": "d68efc94da9eeee01bf4620bbeabdfe8e6887a7162ea53a6ed3f61381223df17"
+  },
+  "data/raw/wikipedia/pageviews/Weak_Hero.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Weak_Hero/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:51:05+00:00",
+    "bytes": 83127,
+    "sha256": "b83673aff703eea8059b00facff494023c4f10a9631577d53aa4f69dbca742e6"
+  },
   "data/raw/wikipedia/pageviews/Wednesday_%28TV_series%29.json": {
     "source": "wikimedia_pageviews",
     "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Wednesday_%28TV_series%29/daily/20230601/20260630",
     "downloaded_at": "2026-09-17T00:21:04+00:00",
     "bytes": 193935,
     "sha256": "0f3f5132d3af0acc1fb2ca3d7ce205ae6cf51f1555e5e7da94c96e6427d3aa60"
+  },
+  "data/raw/wikipedia/pageviews/Welcome_to_Samdal-ri.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Welcome_to_Samdal-ri/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:53:12+00:00",
+    "bytes": 198263,
+    "sha256": "f1e94c4f491cf8e172828665a3ecafdc53e19d7345c60f5f3c6b4fcc9a267be3"
+  },
+  "data/raw/wikipedia/pageviews/When_Life_Gives_You_Tangerines.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/When_Life_Gives_You_Tangerines/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:44:00+00:00",
+    "bytes": 175384,
+    "sha256": "79feb3173bc9c8e21dbc987594b5c15fa9319e12eef338e3d63210a8485dc35d"
+  },
+  "data/raw/wikipedia/pageviews/When_the_Phone_Rings.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/When_the_Phone_Rings/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:46:10+00:00",
+    "bytes": 129005,
+    "sha256": "65a9aefc90ad958de6c27c8cb8921a7c407eab1c7643d4ee690233a023112996"
+  },
+  "data/raw/wikipedia/pageviews/Woody_Woodpecker_Goes_to_Camp.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Woody_Woodpecker_Goes_to_Camp/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:59:10+00:00",
+    "bytes": 173437,
+    "sha256": "c577c58e1a0a087fcbc1d354b4aec43dbce8cfc645c57fa152c9efca7e0c0212"
+  },
+  "data/raw/wikipedia/pageviews/You_Are_So_Not_Invited_to_My_Bat_Mitzvah.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/You_Are_So_Not_Invited_to_My_Bat_Mitzvah/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:58:10+00:00",
+    "bytes": 228547,
+    "sha256": "c6aebca21af51cd789bef7e56717a3d5074a2b8af668c0a9fe694a0b7528d959"
+  },
+  "data/raw/wikipedia/pageviews/Young_Sheldon.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Young_Sheldon/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:56:00+00:00",
+    "bytes": 199465,
+    "sha256": "0d3fb1e240ea43eded80d4427cc423d27d0e6bb2f78948110d49089fe8a0750e"
+  },
+  "data/raw/wikipedia/pageviews/Zero_Day_%28American_TV_series%29.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Zero_Day_%28American_TV_series%29/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:46:11+00:00",
+    "bytes": 121468,
+    "sha256": "3007a2d2bfcd6d68fe43b744a258282f0196e55dcd065c5e3bdbdc6a659a249a"
+  },
+  "data/raw/wikipedia/pageviews/Zeytin_A\u011fac\u0131.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Zeytin_A%C4%9Fac%C4%B1/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T16:01:01+00:00",
+    "bytes": 121782,
+    "sha256": "1baa27af1b928601a406fe2e199c73d87fa46cc16050caaa58ae8ff2a9c3b3ff"
+  },
+  "data/raw/wikipedia/pageviews/\u00d2l\u00f2t\u016br\u00e9%3A%20The%20Journey.json": {
+    "source": "wikimedia_pageviews",
+    "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/%C3%92l%C3%B2t%C5%ABr%C3%A9%3A%20The%20Journey/daily/20230601/20260926",
+    "downloaded_at": "2026-09-26T15:38:05+00:00",
+    "bytes": 120560,
+    "sha256": "8a3376a0a1f53de418e3f3e2d8a277d7df7c605ce97f7a211a8d670183aa3436"
+  },
+  "data/raw/wikipedia/wikidata/imdb_tt0003758_tt11324406.json": {
+    "source": "wikidata",
+    "url": "https://query.wikidata.org/sparql",
+    "downloaded_at": "2026-09-26T15:38:21+00:00",
+    "bytes": 46703,
+    "sha256": "44ad439d330dada8e0818b8b7b08835a3a1321ca03de04b4f2b1e6d66010489f",
+    "imdb_ids": 200
+  },
+  "data/raw/wikipedia/wikidata/imdb_tt0126029_tt33452974.json": {
+    "source": "wikidata",
+    "url": "https://query.wikidata.org/sparql",
+    "downloaded_at": "2026-09-26T15:43:10+00:00",
+    "bytes": 45745,
+    "sha256": "8b4f89aa4054f8399fa2df1b188e67e4f5418dd4f2cb8658faf121e3a13ee23a",
+    "imdb_ids": 200
+  },
+  "data/raw/wikipedia/wikidata/imdb_tt1136617_tt14998742.json": {
+    "source": "wikidata",
+    "url": "https://query.wikidata.org/sparql",
+    "downloaded_at": "2026-09-26T15:38:21+00:00",
+    "bytes": 46381,
+    "sha256": "4b0d1e835cb1e94b8062b32afe1b36c0b153b011cc534efd593b5b55d952b510",
+    "imdb_ids": 200
   },
   "data/raw/wikipedia/wikidata/imdb_tt13443470_tt13443470.json": {
     "source": "wikidata",
@@ -107,5 +2077,85 @@
     "bytes": 341,
     "sha256": "376f441f5d8d7de4e87b36f7078914515cd0af49e50c2054549506f5ac2660d7",
     "imdb_ids": 1
+  },
+  "data/raw/wikipedia/wikidata/imdb_tt15017118_tt20449034.json": {
+    "source": "wikidata",
+    "url": "https://query.wikidata.org/sparql",
+    "downloaded_at": "2026-09-26T15:38:21+00:00",
+    "bytes": 45918,
+    "sha256": "b9b7ef6f25e58659352815f018eb65fec7df9b2c1e9adff5f0c75641146864e9",
+    "imdb_ids": 200
+  },
+  "data/raw/wikipedia/wikidata/imdb_tt2049403_tt26215550.json": {
+    "source": "wikidata",
+    "url": "https://query.wikidata.org/sparql",
+    "downloaded_at": "2026-09-26T15:38:22+00:00",
+    "bytes": 43220,
+    "sha256": "aa0c603036a771c320cd87e9785df93215f5c206f6eb702e205973ebf689a5e4",
+    "imdb_ids": 200
+  },
+  "data/raw/wikipedia/wikidata/imdb_tt26218818_tt28066777.json": {
+    "source": "wikidata",
+    "url": "https://query.wikidata.org/sparql",
+    "downloaded_at": "2026-09-26T15:38:22+00:00",
+    "bytes": 43772,
+    "sha256": "836c82b6ec33e54affbf473017514a255fd85463c73b6c69d3f83c28f1dce4d9",
+    "imdb_ids": 200
+  },
+  "data/raw/wikipedia/wikidata/imdb_tt28073548_tt30422937.json": {
+    "source": "wikidata",
+    "url": "https://query.wikidata.org/sparql",
+    "downloaded_at": "2026-09-26T15:38:23+00:00",
+    "bytes": 40247,
+    "sha256": "5ac9dadafd60186f01e2a0069eeaacff8de9ac7c4a8202ba67b054862d9bf239",
+    "imdb_ids": 200
+  },
+  "data/raw/wikipedia/wikidata/imdb_tt30423279_tt32351597.json": {
+    "source": "wikidata",
+    "url": "https://query.wikidata.org/sparql",
+    "downloaded_at": "2026-09-26T15:38:23+00:00",
+    "bytes": 38797,
+    "sha256": "e6ab13fd803533b37c9eb075171d10c4dcd907d7f3e585d3c1459cb08cbe006c",
+    "imdb_ids": 200
+  },
+  "data/raw/wikipedia/wikidata/imdb_tt32359447_tt34749630.json": {
+    "source": "wikidata",
+    "url": "https://query.wikidata.org/sparql",
+    "downloaded_at": "2026-09-26T15:38:23+00:00",
+    "bytes": 36786,
+    "sha256": "90eaebaad5de998da87797c181c29f39b4f42dd3c8dac7770e5987a7c7b3dd8d",
+    "imdb_ids": 200
+  },
+  "data/raw/wikipedia/wikidata/imdb_tt33474172_tt9335498.json": {
+    "source": "wikidata",
+    "url": "https://query.wikidata.org/sparql",
+    "downloaded_at": "2026-09-26T15:43:12+00:00",
+    "bytes": 12381,
+    "sha256": "c94e5ee95651619061a7cca75698ecc62741abfc1ec7d7f5829f68f7a5b22990",
+    "imdb_ids": 55
+  },
+  "data/raw/wikipedia/wikidata/imdb_tt34762360_tt37961727.json": {
+    "source": "wikidata",
+    "url": "https://query.wikidata.org/sparql",
+    "downloaded_at": "2026-09-26T15:38:24+00:00",
+    "bytes": 35090,
+    "sha256": "5416ac74711ef0ac9d0f4bb65e3f7ca0156f5312ed18cde5163846ec08108f78",
+    "imdb_ids": 200
+  },
+  "data/raw/wikipedia/wikidata/imdb_tt37961742_tt6470478.json": {
+    "source": "wikidata",
+    "url": "https://query.wikidata.org/sparql",
+    "downloaded_at": "2026-09-26T15:38:24+00:00",
+    "bytes": 35665,
+    "sha256": "77505d80aac39b7b57bfe29cc702b165cdcf08a0a4c1750c7aff2b36d72bb118",
+    "imdb_ids": 200
+  },
+  "data/raw/wikipedia/wikidata/imdb_tt6475714_tt9908860.json": {
+    "source": "wikidata",
+    "url": "https://query.wikidata.org/sparql",
+    "downloaded_at": "2026-09-26T15:38:25+00:00",
+    "bytes": 31838,
+    "sha256": "f033608aa0c74ba8754421b17687937ef7a18ad393dc3fa8f37317db5a57dfc2",
+    "imdb_ids": 141
   }
 }

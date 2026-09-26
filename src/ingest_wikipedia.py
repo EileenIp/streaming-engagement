@@ -17,7 +17,7 @@ import argparse
 import json
 import re
 import time
-from urllib.parse import quote
+from urllib.parse import quote, unquote
 
 import pandas as pd
 import requests
@@ -43,7 +43,7 @@ def _get(url, params=None, max_tries=4, **kw):
     return r
 
 
-def _safe_name(article):
+def safe_name(article):
     return re.sub(r"[^\w.-]", lambda m: f"%{ord(m.group()):02X}", article)
 
 
@@ -81,7 +81,11 @@ def load_articles(paths) -> pd.DataFrame:
             article = b.get("article", {}).get("value")
             rows.append({"imdb_id": b["imdb"]["value"],
                          "wikidata_item": b["item"]["value"].rsplit("/", 1)[1],
-                         "article": article.rsplit("/wiki/", 1)[1] if article else None})
+                         # The SPARQL result is a URL, so a non-ASCII article name
+                         # arrives percent-encoded. Decoding it here keeps one spelling
+                         # of the name everywhere; quoting it again at request time was
+                         # double-encoding it into a 404.
+                         "article": unquote(article.rsplit("/wiki/", 1)[1]) if article else None})
             found.add(b["imdb"]["value"])
         rows += [{"imdb_id": i, "wikidata_item": None, "article": None}
                  for i in payload["imdb_ids"] if i not in found]
@@ -98,7 +102,7 @@ def fetch_pageviews(article, start=config.PAGEVIEWS_START, end=config.PAGEVIEWS_
     else:
         r.raise_for_status()
         body = r.json()
-    path = RAW / "pageviews" / f"{_safe_name(article)}.json"
+    path = RAW / "pageviews" / f"{safe_name(article)}.json"
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps({"article": article, "start": str(start), "end": str(end), "response": body},
                                ensure_ascii=False), encoding="utf-8")

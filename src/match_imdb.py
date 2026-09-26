@@ -98,16 +98,32 @@ def build_indexes(con, rebuild=False):
             "tokens": con.execute("SELECT count(*) FROM token_freq").fetchone()[0]}
 
 
-def netflix_entities(engagement=None) -> pd.DataFrame:
+def entity_of(kind: str, title: str, release_date=None) -> tuple:
+    """The (kind, key, year) an engagement row belongs to. The one place that rule lives."""
+    p = normalise.parse(title)
+    if kind == "film":
+        key = normalise.normalise(normalise.YEAR_IN_TITLE.sub("", p.primary).strip())
+    else:
+        key = p.key
+    year = p.year or (release_date.year if release_date else None)
+    return (kind, key, year)
+
+
+def netflix_entities(engagement=None, with_rows=False):
     """One row per thing Netflix reported on, pooled over periods.
 
     A TV entity is a base name (its seasons are listed); a film entity is a name
     plus, where published, a year. A film's trailing number is part of its name
     ('Extraction 2'), so for films the season parse is deliberately ignored.
+
+    with_rows=True also returns, for each engagement row, the entity it belongs to -
+    which is what the star schema needs, since a fact row is one season in one period
+    while an entity is the whole series.
     """
     e = ingest_engagement.load() if engagement is None else engagement
     e = e[~e.is_catch_all]
     rows = {}
+    row_entity = {}
     for r in e.itertuples():
         p = normalise.parse(r.title)
         if r.kind == "film":
@@ -145,6 +161,8 @@ def netflix_entities(engagement=None) -> pd.DataFrame:
         ent["periods"].add(r.period)
         ent["hours_viewed"] += r.hours_viewed
         ent["views"] += int(r.views) if pd.notna(r.views) else 0
+        row_entity[r.Index] = (r.kind, key, year)
+    order = {k: i for i, k in enumerate(rows)}
     df = pd.DataFrame(rows.values())
     for tier in RUNGS:
         # A key already tried on a stronger rung is dropped from the weaker one - but
@@ -160,7 +178,10 @@ def netflix_entities(engagement=None) -> pd.DataFrame:
             for _, row in df.iterrows()]
     df["seasons"] = df["seasons"].apply(lambda s: tuple(sorted(s)))
     df["periods"] = df["periods"].apply(lambda s: tuple(sorted(s)))
-    return df.reset_index(drop=True)
+    df = df.reset_index(drop=True)
+    if not with_rows:
+        return df
+    return df, pd.Series({row: order[ent] for row, ent in row_entity.items()}, dtype="int64")
 
 
 def exact_stage(con, entities: pd.DataFrame) -> pd.DataFrame:
@@ -187,6 +208,9 @@ def exact_stage(con, entities: pd.DataFrame) -> pd.DataFrame:
         LEFT JOIN title_ratings r ON r.tconst = k.tconst
         WHERE n.rung = 'spacing'
     """).fetchdf()
+    # Deterministic order before any tie-break: equal votes must resolve the same way
+    # in every run, or the same data produces a different model.
+    hits = hits.sort_values(["entity", "tier", "tconst"]).reset_index(drop=True)
     resolved = []
     for entity, g in hits.groupby("entity"):
         # Strongest rung that found anything wins; rungs are never pooled.
@@ -204,14 +228,16 @@ def exact_stage(con, entities: pd.DataFrame) -> pd.DataFrame:
                 chosen, tie_break = near_year, "year_within_one"
             else:
                 pool = same_year if len(same_year) > 1 else (near_year if len(near_year) > 1 else candidates)
-                chosen, tie_break = pool.sort_values("votes", ascending=False).head(1), "votes"
+                chosen = pool.sort_values(["votes", "tconst"], ascending=[False, True]).head(1)
+                tie_break = "votes"
         row = chosen.iloc[0]
         resolved.append({"entity": entity, "stage": stage, "rung": rung, "tie_break": tie_break,
                          "tconst": row.tconst,
                          "imdb_type": row.titleType, "imdb_year": row.startYear,
                          "key_source": row.source, "votes": int(row.votes),
                          "tconst_candidates": len(candidates), "score": 100.0,
-                         "runner_up_votes": int(candidates.sort_values("votes", ascending=False).votes.iloc[1])
+                         "runner_up_votes": int(candidates.sort_values(
+                             ["votes", "tconst"], ascending=[False, True]).votes.iloc[1])
                                             if len(candidates) > 1 else None})
     return pd.DataFrame(resolved)
 
@@ -247,11 +273,14 @@ def fuzzy_stage(con, entities: pd.DataFrame, residue, threshold=match.FUZZY_THRE
             FROM rare JOIN imdb_tokens t ON t.token = rare.token AND t.is_series = rare.is_series
         ),
         capped AS (
-            SELECT *, row_number() OVER (PARTITION BY entity) AS n FROM hits
+            -- ORDER BY is not decoration: without it the cap keeps an arbitrary
+            -- subset, so two runs over the same data can match different titles.
+            SELECT *, row_number() OVER (PARTITION BY entity ORDER BY tconst, key) AS n FROM hits
         )
         SELECT c.entity, c.tconst, c.key, k.titleType, k.startYear
         FROM capped c JOIN imdb_keys k ON k.tconst = c.tconst AND k.key = c.key
         WHERE c.n <= {pool_cap}
+        ORDER BY c.entity, c.tconst, c.key
     """).fetchdf()
     by_entity = dict(tuple(pools.groupby("entity")))
     for i in residue:
