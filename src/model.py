@@ -35,6 +35,7 @@ from src import config, ingest_engagement, ingest_top10, match_imdb, match_netfl
 MODEL_DB = config.PROCESSED / "streaming.duckdb"
 
 SCHEMA = """
+DROP VIEW IF EXISTS v_headline;
 DROP VIEW IF EXISTS v_earning_its_place;
 DROP VIEW IF EXISTS v_title_period;
 DROP VIEW IF EXISTS v_top10_longevity;
@@ -168,7 +169,7 @@ SELECT coalesce(t.title_id, p.title_id)        AS title_id,
 FROM top10 t FULL OUTER JOIN pv p
   ON p.title_id = t.title_id AND p.week_ending::DATE = t.week;
 
--- The three candidate headline metrics, side by side, for Checkpoint 3.
+-- The three candidate headline metrics, side by side, as Checkpoint 3 was decided from.
 CREATE OR REPLACE VIEW v_earning_its_place AS
 WITH engagement AS (
     SELECT title_id, sum(hours_viewed) AS hours, sum(views) AS views,
@@ -224,6 +225,23 @@ JOIN engagement e USING (title_id)
 JOIN weeks_available w USING (title_id)
 LEFT JOIN v_top10_longevity l USING (title_id)
 LEFT JOIN demand d USING (title_id);
+
+-- The decision, Checkpoint 3 (Eileen, 2026-09-27): the headline metric is hours per
+-- week available since release, with Top 10 longevity beside it. Longevity correlates
+-- only 0.18 with the headline, so it adds information instead of restating it.
+--
+-- The floor of eight weeks is part of the definition, not a filter bolted on top: a
+-- title released days before the report closed divides a half-year of viewing by one
+-- week and reads as 350M hours a week. Titles under the floor are still in the model,
+-- and still in v_earning_its_place; they are not ranked.
+CREATE OR REPLACE VIEW v_headline AS
+SELECT title_id, canonical_title, kind, imdb_genres, imdb_rating,
+       hours, hours_per_week_available, weeks_available, available_from_source,
+       coalesce(weeks_charted, 0) AS weeks_charted, best_rank,
+       weeks_charted IS NOT NULL AS ever_charted
+FROM v_earning_its_place
+WHERE weeks_available >= 8
+ORDER BY hours_per_week_available DESC;
 """
 
 
@@ -360,9 +378,9 @@ def refresh_views(db_path=MODEL_DB):
     """Recreate the views without rebuilding the tables. The tables take eight minutes
     (matching runs inside); a view definition should not cost that to change."""
     con = duckdb.connect(str(db_path))
-    for statement in VIEWS.split(";"):
-        if statement.strip():
-            con.execute(statement)
+    # One execute for the whole script: splitting on ';' cut a comment in half the
+    # moment a comment contained one.
+    con.execute(VIEWS)
     return con
 
 
@@ -390,18 +408,14 @@ def build(db_path=MODEL_DB, rebuild_imdb_index=False):
     if db_path.exists():
         db_path.unlink()
     con = duckdb.connect(str(db_path))
-    for statement in SCHEMA.split(";"):
-        if statement.strip():
-            con.execute(statement)
+    con.execute(SCHEMA)
     for table, frame in [("dim_title", dim), ("dim_period", dim_period),
                          ("fact_engagement_halfyear", fact_e), ("fact_top10_weekly", fact_t),
                          ("fact_pageviews", pageviews)]:
         con.register(f"src_{table}", frame)
         cols = [c[0] for c in con.execute(f"DESCRIBE {table}").fetchall()]
         con.execute(f"INSERT INTO {table} SELECT {', '.join(cols)} FROM src_{table}")
-    for statement in VIEWS.split(";"):
-        if statement.strip():
-            con.execute(statement)
+    con.execute(VIEWS)
     return con
 
 
