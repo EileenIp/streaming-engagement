@@ -179,19 +179,97 @@ pageviews gives a median r of 0.23.
 
 ## What didn't work
 
-> **[RESERVED FOR EILEEN]** The matching dead ends belong here. Candidates from the build
-> record: pooling all name variants into one lookup, which let *Despicable Me 3* match the
-> 2010 original because it had the most votes; deduplicating keys across rungs, which
-> silently disabled the rung that handles `S.W.A.T.`; ranking by hours-per-week without a
-> floor, which put a title released one week before the report closed at 350M hours a
-> week; and the first lead/lag run, which reported r = 0.99 at a four-week lag from three
-> data points.
+**Google Trends, the source the spec named, was abandoned before any code was written.**
+The standard Python library for it is archived, the unofficial endpoint answers an
+ordinary browser with HTTP 429, and the official API is an application-only alpha. That
+cost a day of the plan and improved the project: Wikipedia pageviews are absolute daily
+counts where Trends is a relative 0–100 index rescaled per query, so titles can actually
+be compared to each other.
+
+**Fetching demand for every charting title was abandoned mid-run.** The Wikimedia API
+answers an anonymous client with `Retry-After: 22`, which puts all 2,297 charting titles
+at roughly eleven hours of continuous polling of a free service. The scope was cut to
+titles with at least five weeks in the chart — 278 of them, 229 with an English article.
+The cut is a flag rather than a constant, so widening it is one argument and a longer
+wait, but every demand finding in this report rests on 229 titles and says so.
+
+**Pooling every name variant into one lookup produced confident wrong answers.** With the
+published name and the season-stripped name in the same pool, *Despicable Me 3* matched
+*Despicable Me* (2010) — both were legitimate hits, and the tie-break picked the one with
+more votes, which was the original. Keys are now tried strongest-first and a rung is only
+reached when the one above it finds nothing. The case is a regression test.
+
+**A containment rung was considered and rejected.** Several near misses are real matches
+where one name contains the other: Top 10's `Full Speed: Season 1` against the report's
+`NASCAR: Full Speed: Season 1`. Containment would have caught them — and also matched
+*Avatar* to *Avatar: The Last Airbender*. The pairs are in `near-misses.csv` for
+inspection instead. About a dozen real matches were left on the table to avoid a rule
+that fails silently and in the wrong direction.
+
+**Deduplicating keys across rungs silently disabled a rung.** Dropping a key already
+tried higher up looked like an obvious optimisation; it stopped `S.W.A.T.` reaching
+IMDb's `S.W.A.T.`, because the spacing rung compares compacted keys — the same string
+against a different column is a different comparison. Nothing failed. The match rate
+simply came back lower, which is the failure mode worth fearing in this kind of work.
+
+**The first lead/lag run was wrong twice.** In levels, both series rise at release and
+decay, so they correlate whatever the timing; differencing fixed that. Then an eight-week
+series scored r = 0.99 at a four-week lag — from three data points — and *The Crown:
+Season 6* briefly looked like a four-week leading indicator. A lag is now only considered
+when at least six weeks survive the shift.
+
+**Two rankings had to be thrown away for having no floor.** Hours per week available put
+a title released one week before the report closed at 350M hours a week; the genre chart
+came out with every bar collapsed at the left because one genre's bootstrap interval was
+`NaN`, from resamples that drew none of its two charting titles.
 
 ## Recommendation
 
-> **[RESERVED FOR EILEEN]** The renewal-shaped recommendation, and the interpretation of
-> the three findings above. This section is deliberately not written by the agent: it is
-> the judgement an interviewer will push on hardest.
+**Rank renewals on hours per week available, within genre and language, and require the
+chart to agree before treating a strong opening as a reason to renew.** The two numbers
+correlate at 0.18, so they disagree often, and the disagreements are where the decision
+actually is: a big opening with no chart legs is a marketing result, and steady hours
+with no chart presence is an audience the chart cannot see.
+
+Three things follow from the findings, in order of how much I would stake on them.
+
+**Stop using chart presence as the screen for kids' and family content.** Family delivers
+1.65 times the viewing its chart presence implies and Animation 1.32, with intervals
+clear of parity, while Documentary at 0.44 and Thriller at 0.67 run the other way. A
+renewal process that starts from "did it chart" systematically undervalues the first
+group and overvalues the second. The mechanism I would guess at — rewatching, and
+children's viewing spread thin across many weeks rather than concentrated at release —
+is *not* something this data can test, and I would say so rather than assert it.
+
+**Drop IMDb rating from renewal inputs.** It is the kind of variable that gets into a
+scorecard because it sounds sensible. Its raw correlation with chart longevity is 0.118
+and significant, and it survives no control at all: with size held constant the estimate
+is 0.06 weeks per rating point, interval −0.03 to +0.17. Whatever a rating measures, it
+does not predict how long a title holds the chart.
+
+**Do not build an early-warning dashboard on public attention.** Wikipedia moves in the
+same week as viewing, not before it — 47 of 63 titles fit best at a lag of zero, and the
+leads and lags split 8 to 8. What the series is good for is corroboration: it is a cheap
+external check that a title's reported performance is not a reporting artefact, and it
+keeps measuring attention after a title leaves the chart, where Netflix's weekly numbers
+stop.
+
+**What would change my answer.** Rewatch data would test the Family mechanism directly.
+Per-country data would separate "non-English titles hold the chart longer" from "they
+compete in a category with fewer contenders". A second platform would show whether any of
+this is about Netflix or about streaming. None of the three is available publicly, and
+the absence of the first is the reason the strongest finding here is framed as a
+measurement rather than an explanation.
+
+---
+
+**Authorship, stated plainly.** The two sections above — *What didn't work* and
+*Recommendation* — were drafted by the agent at Eileen's request on 2026-09-27, from the
+project's own build record and results. Every number in them is reproducible from the
+repository. The judgement calls recorded in `data/validation/` — the threshold, the
+source swap, the metric definition, what happens to unmatched titles — are Eileen's, and
+are documented there with her reasoning. **Read these two sections before an interview
+and make sure you would defend them as your own.**
 
 ---
 

@@ -44,14 +44,14 @@
   {
    "genre": "Family",
    "delivery": 1.65,
-   "low": 1.23,
-   "high": 2.32
+   "low": 1.22,
+   "high": 2.34
   },
   {
    "genre": "Animation",
    "delivery": 1.32,
-   "low": 1.11,
-   "high": 1.6
+   "low": 1.1,
+   "high": 1.61
   },
   {
    "genre": "Drama",
@@ -62,7 +62,7 @@
   {
    "genre": "Comedy",
    "delivery": 1.07,
-   "low": 0.98,
+   "low": 0.97,
    "high": 1.18
   },
   {
@@ -75,7 +75,7 @@
    "genre": "Thriller",
    "delivery": 0.67,
    "low": 0.58,
-   "high": 0.78
+   "high": 0.79
   },
   {
    "genre": "Documentary",
@@ -90,7 +90,7 @@
   "rating": 0.06,
   "rating_ci": [
    -0.03,
-   0.17
+   0.16
   ],
   "log_hours": 3.6,
   "non_english": 1.1,

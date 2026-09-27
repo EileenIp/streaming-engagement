@@ -310,19 +310,49 @@ function stat(slide, { x, y, w, value, label, colour = TEAL }) {
   });
 }
 
-// --- 11. closing -------------------------------------------------------------------------
+// --- 11. recommendation -----------------------------------------------------------------
+{
+  const s = pres.addSlide();
+  titleOf(s, "What to do about it", "Ranked by how much I would stake on each");
+  const recs = [
+    ["Rank renewals on hours per week, within genre and language — and require the chart to agree",
+     `The two measures correlate at 0.18. The disagreements are the decision: a big opening with no legs is a marketing result; steady hours with no chart presence is an audience the chart cannot see.`],
+    ["Stop screening kids' and family content on chart presence",
+     "Family delivers 1.65× the viewing its chart presence implies, Animation 1.32 — both intervals clear of parity. Documentary (0.44) and Thriller (0.67) run the other way."],
+    ["Drop IMDb rating from renewal inputs",
+     "Raw correlation 0.118 and significant; with size held constant, 0.06 weeks per point, interval −0.03 to +0.17. It survives no control at all."],
+    ["Do not build an early warning on public attention",
+     "Wikipedia moves the same week, not before. Useful as corroboration, and after a title leaves the chart — not as a forecast."],
+  ];
+  recs.forEach(([head, detail], i) => {
+    const y = 1.6 + i * 0.95;
+    card(s, { x: M, y, w: W - 2 * M, h: 0.85 });
+    s.addShape(pres.ShapeType.ellipse, { x: M + 0.2, y: y + 0.34, w: 0.16, h: 0.16,
+      fill: { color: i === 0 ? TEAL : MINT }, line: { color: i === 0 ? TEAL : MINT } });
+    s.addText(head, { x: M + 0.52, y: y + 0.08, w: 8.2, h: 0.28, isTextBox: true, margin: 0,
+      fontFace: BODY, fontSize: 13, bold: true, color: INK });
+    s.addText(detail, { x: M + 0.52, y: y + 0.38, w: 8.2, h: 0.42, isTextBox: true, margin: 0,
+      fontFace: BODY, fontSize: 10.5, color: MUTED });
+  });
+  s.addNotes("Rewatch data would test the Family mechanism directly; per-country data would separate 'non-English holds longer' from 'competes in a thinner category'. Neither is public, which is why the finding is framed as a measurement rather than an explanation.");
+}
+
+// --- 12. closing -------------------------------------------------------------------------
 {
   const s = pres.addSlide();
   s.background = { color: INK };
-  s.addText("Recommendation", { x: M, y: 1.5, w: W - 2 * M, h: 0.6, isTextBox: true, margin: 0,
-    fontFace: HEAD, fontSize: 34, bold: true, color: PAPER });
-  s.addText("[Reserved — Eileen writes the interpretation and the renewal-shaped recommendation]",
-    { x: M, y: 2.2, w: 8.4, h: 0.5, isTextBox: true, margin: 0, fontFace: BODY, fontSize: 16, color: MINT });
-  s.addText("The findings on the previous slides are measurements. What a content team should do about them is a judgement, and it is deliberately not the agent's.",
-    { x: M, y: 2.8, w: 7.6, h: 0.7, isTextBox: true, margin: 0, fontFace: BODY, fontSize: 13, color: "C9CDD2" });
-  s.addText("Reproducible end to end: python -m src.match_report · src.model · src.analysis · src.dashboard. 74 tests. IMDb data used under its non-commercial terms.",
-    { x: M, y: 4.55, w: 8.6, h: 0.5, isTextBox: true, margin: 0, fontFace: BODY, fontSize: 11, color: MUTED });
-  s.addNotes("The reserved section is deliberate: the interpretation is the part an interviewer pushes on, so it has to be Eileen's own.");
+  s.addText("What would change the answer", { x: M, y: 1.35, w: W - 2 * M, h: 0.55, isTextBox: true,
+    margin: 0, fontFace: HEAD, fontSize: 30, bold: true, color: PAPER });
+  s.addText([
+    { text: "Rewatch data would test the Family mechanism directly — this data cannot.", options: { bullet: true, breakLine: true } },
+    { text: "Per-country data would separate “non-English titles hold the chart longer” from “they compete in a thinner category”.", options: { bullet: true, breakLine: true } },
+    { text: "A second platform would show whether any of this is about Netflix or about streaming.", options: { bullet: true } },
+  ], { x: M, y: 2.1, w: 8.4, h: 1.4, isTextBox: true, margin: 0, fontFace: BODY, fontSize: 14,
+       color: "C9CDD2", paraSpaceAfter: 10 });
+  s.addText("None of the three is public. That is why the strongest finding here is framed as a measurement, not an explanation.",
+    { x: M, y: 3.55, w: 8.4, h: 0.5, isTextBox: true, margin: 0, fontFace: BODY, fontSize: 13, color: MINT });
+  s.addText("Reproducible end to end: python -m src.match_report · src.model · src.analysis · src.dashboard. 75 tests. IMDb data used under its non-commercial terms. Interpretation drafted by the agent, 2026-09-27; the checkpoint decisions are Eileen's and are recorded in data/validation/.",
+    { x: M, y: 4.45, w: 8.6, h: 0.7, isTextBox: true, margin: 0, fontFace: BODY, fontSize: 10, color: MUTED });
 }
 
 pres.writeFile({ fileName: OUT }).then(() => console.log(`wrote ${OUT}`));
