@@ -33,6 +33,10 @@ OUT = config.ROOT / "data" / "validation" / "phase4-findings.md"
 SEED = 20260927
 BOOTSTRAP = 2000
 MIN_GENRE_TITLES = 25      # a genre needs a real sample before a ratio means anything
+# The denominator is chart slots, so a genre also needs titles that actually charted.
+# Talk-Show has two, and its bootstrap interval came back NaN: the resamples that drew
+# neither of them divide by zero.
+MIN_GENRE_CHARTING = 10
 MIN_DEMAND_WEEKS = 8       # weeks of overlap before a lead/lag estimate is worth having
 MAX_LAG = 4                # weeks either side
 MIN_PAIRS = 6              # overlapping points a lagged correlation needs to mean anything
@@ -107,7 +111,9 @@ def delivery_ratio(df: pd.DataFrame) -> pd.DataFrame:
     out["delivery"] = point
     out["ci_low"] = boot.quantile(0.025)
     out["ci_high"] = boot.quantile(0.975)
-    return out[out.titles >= MIN_GENRE_TITLES].sort_values("delivery", ascending=False)
+    out = out.replace([np.inf, -np.inf], np.nan)
+    keep = (out.titles >= MIN_GENRE_TITLES) & (out.charting >= MIN_GENRE_CHARTING)
+    return out[keep].sort_values("delivery", ascending=False)
 
 
 # --- question 2: rating and chart longevity ---------------------------------------------
@@ -320,9 +326,10 @@ def build(con) -> str:
         "",
         "Share of reported hours divided by share of Top 10 slots. Above 1 means a genre "
         "gets watched more than its chart presence would suggest; below 1 means it charts "
-        f"more than it is watched. Genres with fewer than {MIN_GENRE_TITLES} titles are "
-        "dropped. Genres come from IMDb, not Netflix, and a title with three genres counts "
-        "in all three.",
+        f"more than it is watched. A genre needs {MIN_GENRE_TITLES} titles and "
+        f"{MIN_GENRE_CHARTING} that charted to appear - the denominator is chart slots, so "
+        "without chart presence the ratio has none. Genres are "
+        "from IMDb, not Netflix, and a title with three genres counts in all three.",
         "",
         g.to_markdown(),
         "",

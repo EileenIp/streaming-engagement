@@ -8,7 +8,8 @@ inconsistent sources are ingested, resolved to one another, and modelled into a 
 star schema. The interesting work is the resolution: Netflix, IMDb and Wikipedia share
 no identifier, and Netflix does not even agree with itself between its own two files.
 
-Status: **Phases 0–3 built.** Phase 4 (analysis) and Phase 5 (deliverables) are next.
+Status: **Phases 0–5 built.** The interpretation and the recommendation are reserved for
+Eileen and marked as such in the report and the deck.
 The decision log is in `data/validation/`; the working spec is
 `spec-streaming-engagement.md`.
 
@@ -134,6 +135,18 @@ season entirely. One rung treats a first-and-only season written three ways as o
 but only when the name matches exactly one candidate, so it can never pick the wrong
 season.
 
+## Deliverables
+
+| What | Where |
+|---|---|
+| Self-contained dashboard (filter by period, genre, type; no CDN, no build step) | `dashboard/index.html` |
+| Report | `deliverables/streaming-engagement-report.md` and `.docx` |
+| Stakeholder deck | `deliverables/streaming-engagement-deck.pptx` |
+| Decision log | `data/validation/` — one file per checkpoint, plus the match report and the full near-miss list |
+
+The deck and the dashboard read their figures from the model (`deliverables/deck-data.json`
+is generated, not written), so a rebuild cannot leave a stale number on a slide.
+
 ## Running it
 
 ```bash
@@ -144,7 +157,10 @@ python -m src.ingest_imdb --download           # 0.8 GB of gzipped TSV into Duck
 python -m src.match_report                     # both joins, the report, the near-miss list
 python -m src.model                            # build the star schema
 python -m src.fetch_demand                     # Wikipedia pageviews (slow: rate-limited)
-python -m pytest -q                            # 60+ tests
+python -m src.analysis                         # the three findings, with intervals
+python -m src.dashboard                        # dashboard/index.html
+python -m src.deck                             # deliverables deck (needs node + pptxgenjs)
+python -m pytest -q                            # 74 tests
 ```
 
 Raw data is gitignored; `data/manifest.json` records every download's URL, time, size and

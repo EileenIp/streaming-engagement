@@ -6,35 +6,32 @@ Three limits apply to everything below, so they are stated once. The engagement 
 
 ## 1. Which genres over-deliver hours against their chart presence?
 
-Share of reported hours divided by share of Top 10 slots. Above 1 means a genre gets watched more than its chart presence would suggest; below 1 means it charts more than it is watched. Genres with fewer than 25 titles are dropped. Genres come from IMDb, not Netflix, and a title with three genres counts in all three.
+Share of reported hours divided by share of Top 10 slots. Above 1 means a genre gets watched more than its chart presence would suggest; below 1 means it charts more than it is watched. A genre needs 25 titles and 10 that charted to appear - the denominator is chart slots, so without chart presence the ratio has none. Genres are from IMDb, not Netflix, and a title with three genres counts in all three.
 
 | genre       |   titles |   charting |   hours_share |   slots_share |   delivery | ci        |
 |:------------|---------:|-----------:|--------------:|--------------:|-----------:|:----------|
-| Family      |     1427 |         82 |           2.3 |           1.4 |       1.65 | 1.23–2.32 |
-| Western     |       92 |         12 |           0.2 |           0.2 |       1.36 | 0.93–2.07 |
-| Animation   |     2751 |        212 |           6.1 |           4.6 |       1.32 | 1.1–1.61  |
-| Fantasy     |     1301 |        118 |           2.9 |           2.4 |       1.23 | 1.01–1.51 |
-| Music       |      577 |         40 |           0.5 |           0.5 |       1.21 | 0.77–1.88 |
-| Adventure   |     3332 |        381 |           8.5 |           7.2 |       1.18 | 1.04–1.36 |
+| Family      |     1427 |         82 |           2.3 |           1.4 |       1.65 | 1.24–2.33 |
+| Western     |       92 |         12 |           0.2 |           0.2 |       1.36 | 0.91–2.09 |
+| Animation   |     2751 |        212 |           6.1 |           4.6 |       1.32 | 1.1–1.62  |
+| Fantasy     |     1301 |        118 |           2.9 |           2.4 |       1.23 | 1.02–1.5  |
+| Music       |      577 |         40 |           0.5 |           0.5 |       1.21 | 0.77–1.94 |
+| Adventure   |     3332 |        381 |           8.5 |           7.2 |       1.18 | 1.04–1.35 |
 | Drama       |    11069 |       1158 |          22.8 |          20.9 |       1.09 | 1.03–1.15 |
 | Comedy      |     8217 |        680 |          13.1 |          12.3 |       1.07 | 0.97–1.18 |
 | Romance     |     3513 |        337 |           6.3 |           6.3 |       1.01 | 0.89–1.17 |
-| Musical     |      176 |          7 |           0.2 |           0.2 |       0.99 | 0.42–4.15 |
-| Action      |     4560 |        604 |          10.6 |          10.7 |       0.98 | 0.89–1.08 |
-| Mystery     |     1877 |        219 |           3.8 |           4.1 |       0.94 | 0.8–1.11  |
-| Game-Show   |      209 |         36 |           0.5 |           0.5 |       0.93 | 0.76–1.25 |
+| Action      |     4560 |        604 |          10.6 |          10.7 |       0.98 | 0.9–1.08  |
+| Mystery     |     1877 |        219 |           3.8 |           4.1 |       0.94 | 0.8–1.1   |
+| Game-Show   |      209 |         36 |           0.5 |           0.5 |       0.93 | 0.76–1.23 |
 | Crime       |     3784 |        576 |           9.4 |          10.2 |       0.93 | 0.84–1.02 |
-| Sci-Fi      |      679 |         58 |           0.9 |           1   |       0.91 | 0.66–1.32 |
-| War         |      235 |         12 |           0.1 |           0.2 |       0.83 | 0.57–1.57 |
-| Biography   |     1134 |        105 |           1.3 |           1.6 |       0.83 | 0.68–1.03 |
-| Short       |      218 |          7 |           0.1 |           0.1 |       0.8  | 0.44–3.08 |
-| Horror      |     1626 |        138 |           2   |           2.5 |       0.8  | 0.56–1.17 |
-| Reality-TV  |      683 |        101 |           1.1 |           1.4 |       0.8  | 0.7–0.93  |
-| History     |      820 |         91 |           1.2 |           1.5 |       0.78 | 0.66–0.95 |
+| Sci-Fi      |      679 |         58 |           0.9 |           1   |       0.91 | 0.67–1.28 |
+| War         |      235 |         12 |           0.1 |           0.2 |       0.83 | 0.58–1.57 |
+| Biography   |     1134 |        105 |           1.3 |           1.6 |       0.83 | 0.69–1.03 |
+| Horror      |     1626 |        138 |           2   |           2.5 |       0.8  | 0.57–1.16 |
+| Reality-TV  |      683 |        101 |           1.1 |           1.4 |       0.8  | 0.7–0.92  |
+| History     |      820 |         91 |           1.2 |           1.5 |       0.78 | 0.64–0.94 |
 | Thriller    |     2643 |        346 |           3.9 |           5.8 |       0.67 | 0.58–0.77 |
-| Sport       |      597 |         71 |           0.6 |           0.9 |       0.66 | 0.53–0.84 |
-| Talk-Show   |      123 |          2 |           0   |           0.1 |       0.44 | 0.27–nan  |
-| Documentary |     1710 |        247 |           1.4 |           3.2 |       0.44 | 0.4–0.48  |
+| Sport       |      597 |         71 |           0.6 |           0.9 |       0.66 | 0.54–0.84 |
+| Documentary |     1710 |        247 |           1.4 |           3.2 |       0.44 | 0.39–0.49 |
 
 ## 2. Do higher-rated titles hold the chart longer?
 
@@ -44,12 +41,12 @@ Rating on its own is confounded — big titles get watched, rated and charted to
 
 | term        |   estimate |   ci_low |   ci_high |
 |:------------|-----------:|---------:|----------:|
-| intercept   |    -24.419 |  -28.039 |   -21.375 |
-| rating      |      0.062 |   -0.034 |     0.165 |
-| log_hours   |      3.581 |    3.151 |     4.089 |
-| log_votes   |     -0.25  |   -0.452 |    -0.079 |
-| is_tv       |     -1.074 |   -1.5   |    -0.739 |
-| non_english |      1.076 |    0.889 |     1.268 |
+| intercept   |    -24.419 |  -28.001 |   -21.397 |
+| rating      |      0.062 |   -0.032 |     0.168 |
+| log_hours   |      3.581 |    3.159 |     4.108 |
+| log_votes   |     -0.25  |   -0.458 |    -0.075 |
+| is_tv       |     -1.074 |   -1.531 |    -0.757 |
+| non_english |      1.076 |    0.889 |     1.275 |
 
 R² = 0.384. The response is weeks charted, so an estimate of 0.5 on `rating` would mean half a week more chart time per rating point.
 

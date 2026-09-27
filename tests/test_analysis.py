@@ -85,6 +85,7 @@ def genre_frame(rows):
 
 def test_delivery_is_one_when_hours_and_chart_share_agree(monkeypatch):
     monkeypatch.setattr(analysis, "MIN_GENRE_TITLES", 2)
+    monkeypatch.setattr(analysis, "MIN_GENRE_CHARTING", 1)
     monkeypatch.setattr(analysis, "BOOTSTRAP", 200)
     rows = []
     for i in range(6):
@@ -97,6 +98,7 @@ def test_delivery_is_one_when_hours_and_chart_share_agree(monkeypatch):
 
 def test_a_genre_watched_without_charting_delivers_above_one(monkeypatch):
     monkeypatch.setattr(analysis, "MIN_GENRE_TITLES", 2)
+    monkeypatch.setattr(analysis, "MIN_GENRE_CHARTING", 1)
     monkeypatch.setattr(analysis, "BOOTSTRAP", 200)
     rows = []
     for i in range(8):
@@ -110,6 +112,7 @@ def test_a_genre_watched_without_charting_delivers_above_one(monkeypatch):
 
 def test_a_multi_genre_title_counts_in_each_genre_and_shares_still_sum_to_one(monkeypatch):
     monkeypatch.setattr(analysis, "MIN_GENRE_TITLES", 1)
+    monkeypatch.setattr(analysis, "MIN_GENRE_CHARTING", 1)
     monkeypatch.setattr(analysis, "BOOTSTRAP", 50)
     rows = [("x", "Drama", 100, 2, 1), ("x", "Crime", 100, 2, 1), ("y", "Comedy", 50, 1, 1)]
     out = analysis.delivery_ratio(genre_frame(rows))
@@ -151,3 +154,18 @@ def test_rating_effect_reports_an_interval_that_can_contain_zero():
     low, high = out["ci"][0][i], out["ci"][1][i]
     assert low < 0 < high, "an unrelated predictor should not come back significant"
     assert out["n"] == n
+
+
+def test_a_genre_without_chart_presence_is_dropped_not_reported(monkeypatch):
+    """The ratio's denominator is chart slots. Talk-Show has two charting titles and its
+    bootstrap interval came back NaN, because resamples that drew neither divide by zero."""
+    monkeypatch.setattr(analysis, "MIN_GENRE_TITLES", 2)
+    monkeypatch.setattr(analysis, "MIN_GENRE_CHARTING", 3)
+    monkeypatch.setattr(analysis, "BOOTSTRAP", 50)
+    rows = []
+    for i in range(6):
+        rows.append((f"a{i}", "Drama", 100, 1, 1))          # every title charted
+        rows.append((f"b{i}", "Talk-Show", 100, 1 if i < 2 else 0, 1 if i < 2 else 0))
+    out = analysis.delivery_ratio(genre_frame(rows))
+    assert "Drama" in out.index
+    assert "Talk-Show" not in out.index
