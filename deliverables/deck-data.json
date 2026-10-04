@@ -1,11 +1,11 @@
 {
  "titles": 24902,
- "matched": 22963,
- "match_rate": 0.9221347682917035,
- "film_rate": 0.961867029837811,
- "tv_rate": 0.8487654320987654,
+ "matched": 23072,
+ "match_rate": 0.9265119267528713,
+ "film_rate": 0.9677479262102265,
+ "tv_rate": 0.8503657978966621,
  "hours_total": 565583400000,
- "hours_matched_share": 0.9870809503956446,
+ "hours_matched_share": 0.9883934005135229,
  "engagement_rows": 97738,
  "top10_rows": 10880,
  "weeks": 272,
@@ -13,7 +13,7 @@
  "demand_titles": 229,
  "netflix_join_rate": 0.9952966714905933,
  "netflix_join_rows": 2764,
- "threshold": 88.0,
+ "threshold": 87.0,
  "rungs": [
   {
    "rung": "name",
@@ -33,11 +33,11 @@
   },
   {
    "rung": "qualifier_dropped",
-   "n": 12
+   "n": 95
   },
   {
    "rung": "fuzzy",
-   "n": 258
+   "n": 284
   }
  ],
  "genres": [
@@ -45,13 +45,13 @@
    "genre": "Family",
    "delivery": 1.65,
    "low": 1.22,
-   "high": 2.34
+   "high": 2.31
   },
   {
    "genre": "Animation",
    "delivery": 1.32,
-   "low": 1.1,
-   "high": 1.61
+   "low": 1.11,
+   "high": 1.62
   },
   {
    "genre": "Drama",
@@ -73,24 +73,24 @@
   },
   {
    "genre": "Thriller",
-   "delivery": 0.67,
+   "delivery": 0.66,
    "low": 0.58,
-   "high": 0.79
+   "high": 0.78
   },
   {
    "genre": "Documentary",
    "delivery": 0.44,
-   "low": 0.4,
+   "low": 0.39,
    "high": 0.48
   }
  ],
  "longevity": {
-  "n": 2282,
+  "n": 2292,
   "rho": 0.118,
   "rating": 0.06,
   "rating_ci": [
    -0.03,
-   0.16
+   0.17
   ],
   "log_hours": 3.6,
   "non_english": 1.1,

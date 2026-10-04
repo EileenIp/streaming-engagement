@@ -149,7 +149,16 @@ def netflix_entities(engagement=None, with_rows=False):
         ent["alternate_name"].update(a for a in alternates if a and a != key)
         # 'S.W.A.T.' is 's w a t' in IMDb and 'swat' here; compacting both sides matches them.
         ent["spacing"].add(normalise.compact(key))
-        if p.qualifier and r.kind == "tv":
+        if p.qualifier and (r.kind == "tv" or year or " " in p.key_without_qualifier):
+            # Films carry the qualifier too - 153 of them, almost all Indian-language
+            # versions: 'Leo (Hindi) (2023)', 'Tughlaq Durbar (Telugu)'. Eileen's
+            # hand-labelled pairs called that last one a match, and it was reaching
+            # fuzzy instead of this rung because the rung was TV-only.
+            #
+            # The guard is what keeps it safe: a film qualifies only when it has a
+            # published year or a multi-word name. Without it, 'Bro (Hindi)' becomes
+            # the key 'bro' and the vote tie-break picks whichever film called Bro has
+            # the most votes.
             ent["qualifier_dropped"].add(p.key_without_qualifier)
         if r.kind == "tv" and ": " in p.base:
             # 'ONE PIECE: East Blue' and 'Demon Slayer: ...: Hashira Training Arc' are

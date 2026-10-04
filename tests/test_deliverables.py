@@ -38,7 +38,7 @@ def test_the_deck_carries_the_same_authorship_note():
 
 def test_the_report_quotes_figures_the_run_actually_produced():
     text = REPORT.read_text(encoding="utf-8")
-    for figure in ["99.5%", "92.2%", "98.7%", "1.65", "0.44", "0.06", "47 of 63", "88"]:
+    for figure in ["99.5%", "92.7%", "98.8%", "1.65", "0.44", "0.06", "47 of 63", "87"]:
         assert figure in text, figure
     # A claim that outlived its evidence is worse than no claim.
     assert "Google Trends" in text and "429" in text

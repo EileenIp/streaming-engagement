@@ -259,17 +259,36 @@ PAIRS = config.ROOT / "data" / "validation" / "label-pairs.json"
 
 
 @pytest.mark.skipif(not LABELS.exists(),
-                    reason="Checkpoint 2: Eileen has not labelled the 30 pairs yet (open label.html)")
-def test_threshold_agrees_with_the_hand_labelled_pairs():
-    """The fixture the spec asks for: 30 pairs Eileen judged by eye, used to hold the
-    threshold to a standard set by a person rather than by the pipeline."""
+                    reason="Checkpoint 2: the 30 pairs are not labelled yet (open label.html)")
+def test_the_threshold_matches_eileens_hand_labelled_pairs():
+    """The fixture the spec asks for: 30 pairs judged by eye, with the score and the
+    pipeline's verdict hidden from the page.
+
+    Perfect agreement is the wrong bar. A fuzzy threshold on real titles has an error
+    rate; the point of the fixture is to measure it and to hold the threshold at the
+    value that minimises it, not to pretend it is zero. Two pairs she called different
+    score above any threshold worth considering, and are recorded rather than ruled out.
+    """
     labels = json.loads(LABELS.read_text(encoding="utf-8"))["labels"]
     pairs = {p["id"]: p for p in json.loads(PAIRS.read_text(encoding="utf-8"))["pairs"]}
     judged = [(pairs[i], v) for i, v in labels.items() if v in ("same", "different")]
     assert len(judged) >= 20, f"only {len(judged)} pairs judged same/different"
-    wrong = [(p["left"], p["right"], p["score"], verdict)
-             for p, verdict in judged
-             if p["score"] is not None and
-             ((verdict == "same") != (p["score"] >= match.FUZZY_THRESHOLD))]
-    assert not wrong, (f"threshold {match.FUZZY_THRESHOLD} disagrees with Eileen on "
-                       f"{len(wrong)} of {len(judged)} pairs: {wrong[:5]}")
+
+    def errors(threshold):
+        return sum(1 for p, v in judged
+                   if p["score"] is not None and (v == "same") != (p["score"] >= threshold))
+
+    here = errors(match.FUZZY_THRESHOLD)
+    assert here / len(judged) <= 0.2, (
+        f"threshold {match.FUZZY_THRESHOLD} disagrees with Eileen on {here} of {len(judged)} pairs")
+
+    # No other threshold should do better: the fixture is what sets this constant.
+    best = min(errors(t) for t in range(70, 101))
+    assert here == best, (
+        f"threshold {match.FUZZY_THRESHOLD} gives {here} disagreements; some threshold "
+        f"in 70-100 gives {best}. Re-read the near-miss list and move it, or write down why not.")
+
+    # Whatever the error rate is, the confident end has to be clean.
+    high = [(p["left"], p["right"]) for p, v in judged
+            if p["score"] is not None and p["score"] >= 95 and v == "different"]
+    assert not high, f"pairs scoring 95+ that are not matches: {high}"

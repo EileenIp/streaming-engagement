@@ -1,6 +1,6 @@
 # Checkpoint 3 — what does "earning its place" mean?
 
-Built 2026-09-27 from `v_earning_its_place`, over the 16,313 titles with at least 1M reported hours. Every figure is from `python -m src.metric_options`.
+Built 2026-10-04 from `v_earning_its_place`, over the 16,313 titles with at least 1M reported hours. Every figure is from `python -m src.metric_options`.
 
 The spec names three candidates and leaves the choice here. What each one can actually be computed for:
 
@@ -16,9 +16,9 @@ Total reported hours divided by the weeks between release and the end of the las
 
 | available_from_source   |   titles |   median_weeks |
 |:------------------------|---------:|---------------:|
-| imdb_start_year         |     9929 |            495 |
+| imdb_start_year         |     9992 |            495 |
 | netflix_release_date    |     5802 |            215 |
-| first_period_reported   |      582 |            130 |
+| first_period_reported   |      519 |            130 |
 
 It also punishes old catalogue titles by construction. These are real, large titles whose hours are spread over a denominator of decades:
 

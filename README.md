@@ -104,17 +104,18 @@ Views for the dashboard: `v_title_period`, `v_top10_longevity`, `v_weekly_demand
 | Join | Matched | |
 |---|---|---|
 | Top 10 → engagement report, same half | 2,751 / 2,764 | 99.5% |
-| Engagement titles → IMDb id | 22,963 / 24,902 | 92.2% |
-| — film | 15,538 / 16,154 | 96.2% |
-| — TV | 7,425 / 8,748 | 84.9% |
-| Share of all reported viewing hours matched | | **98.7%** |
+| Engagement titles → IMDb id | 23,072 / 24,902 | 92.7% |
+| — film | 15,633 / 16,154 | 96.8% |
+| — TV | 7,439 / 8,748 | 85.0% |
+| Share of all reported viewing hours matched | | **98.8%** |
 
 Exact string matching, with no normalisation at all, gets 54–57% on the first join. The
 rest is a documented ladder of rungs, each counted separately so a weak one can be
 inspected or switched off: name, alternate-language name, spacing (`S.W.A.T.` ↔ `swat`),
 qualifier dropped (`Shameless (U.S.)` → `Shameless`), series prefix (`ONE PIECE: East
-Blue` → the series), then fuzzy matching above a threshold of 88. Fuzzy contributes 1
-pair on the first join and 258 on the second — almost all of the work is normalisation,
+Blue` → the series), then fuzzy matching above a threshold of 87, set by a 30-pair
+fixture Eileen labelled by hand. Fuzzy contributes 1 pair on the first join and 284 on
+the second — almost all of the work is normalisation,
 not string distance. Full report: [`match-report.md`](data/validation/match-report.md);
 the threshold decision and the pairs it correctly rejects:
 [`checkpoint2-threshold.md`](data/validation/checkpoint2-threshold.md).

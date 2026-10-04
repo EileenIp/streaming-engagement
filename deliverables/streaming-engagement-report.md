@@ -72,35 +72,53 @@ separately so a weak one can be inspected — or switched off — on its own.
 | series prefix (a named arc → its series) | 660 |
 | alternate-language name | 450 |
 | spacing (`S.W.A.T.` ↔ `swat`) | 133 |
-| qualifier dropped (`Shameless (U.S.)` → `Shameless`) | 12 |
-| fuzzy, score ≥ 88 | 258 |
-| near miss, below threshold | 1,867 |
-| no candidate at all | 72 |
+| qualifier dropped (`Shameless (U.S.)`, `Leo (Hindi)`) | 95 |
+| fuzzy, score ≥ 87 | 284 |
+| near miss, below threshold | 1,771 |
+| no candidate at all | 59 |
 
 | Join | Rows | Matched | |
 |---|---|---|---|
 | Top 10 → engagement report, same half | 2,764 | 2,751 | **99.5%** |
-| Engagement titles → IMDb id | 24,902 | 22,963 | **92.2%** |
-| — film | 16,154 | 15,538 | 96.2% |
-| — TV | 8,748 | 7,425 | 84.9% |
-| Share of reported viewing hours matched | | | **98.7%** |
+| Engagement titles → IMDb id | 24,902 | 23,072 | **92.7%** |
+| — film | 16,154 | 15,633 | 96.8% |
+| — TV | 8,748 | 7,439 | 85.0% |
+| Share of reported viewing hours matched | | | **98.8%** |
 
-Fuzzy matching contributes one pair on the first join and 258 on the second. Nearly all
+Fuzzy matching contributes one pair on the first join and 284 on the second. Nearly all
 of the gain is normalisation, not string distance — which is the opposite of how this
 problem is usually described.
 
-**The threshold is 88, set by reading the near-miss list by band, not by picking a round
-number.** The 88–90 band is mostly true matches — whole film families where Netflix
-writes `Detective Conan the Movie: The Scarlet Bullet` and IMDb writes `detective conan
-the scarlet bullet`. The 85–88 band is genuinely mixed. Three pairs 88 correctly rejects:
-`Sir (Hindi) (2023)` vs `jai hind sir`, `Matsumoto Seicho's Kao` vs `matsumoto seicho no
-ekiro`, and `Louis C.K.: Ridiculous` vs `ridiculous cakes`.
+**The threshold is 87, and a person set it.** It started at 88, read off the near-miss
+list band by band — the 88–90 band is mostly true matches, whole film families where
+Netflix writes `Detective Conan the Movie: The Scarlet Bullet` and IMDb writes `detective
+conan the scarlet bullet`, while the 85–88 band is genuinely mixed.
+
+Then 30 pairs sampled across the score range were hand-labelled, with the score and the
+pipeline's verdict hidden from the page. **The labels agreed with the pipeline on 24 of
+the 29 judged, and put the threshold at 87** — three disagreements there against four at
+88. Pairs it correctly rejects: `Sir (Hindi) (2023)` vs `jai hind sir`,
+`Matsumoto Seicho's Kao` vs `matsumoto seicho no ekiro`, `Louis C.K.: Ridiculous` vs
+`ridiculous cakes`.
+
+Two pairs it accepts are **not** matches — `Project Mc²: Part 2` vs `project c24` at 90.9,
+and `The Secret World of Lego` vs `the secret world of` at 88.4 — and no threshold worth
+considering excludes them. They are recorded as the fuzzy rung's measured error rate,
+roughly 2 in 29 audited pairs, rather than ruled out by a prefix rule that would also
+reject `Broken Hearts Gallery` against `the broken hearts gallery`.
+
+The audit also found what no amount of reading the list would have: one disagreement was
+a missing rung rather than a bad threshold. `Tughlaq Durbar (Telugu)` could not reach the
+qualifier rung because it was restricted to TV, so 153 film titles carrying a language
+qualifier — almost all Indian-language versions — were invisible to it. Fixing that
+matched 82 more titles, including *Kalki 2898 AD (Hindi)* and *Baahubali 2: The
+Conclusion (Hindi Version)*.
 
 Where one name matches several IMDb ids, they are narrowed by year, then year within
 one, then vote count. The last of those is a judgement rather than a fact, so it is
 counted and the genuinely close cases are listed.
 
-**Unmatched titles are kept, flagged, not dropped** — 7.8% of titles but 1.3% of hours.
+**Unmatched titles are kept, flagged, not dropped** — 7.3% of titles but 1.2% of hours.
 Dropping them would bias every "earning its place" result towards titles that happen to
 resolve.
 

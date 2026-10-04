@@ -164,7 +164,12 @@ def main():
     near.to_csv(VALIDATION / "near-misses.csv", index=False, encoding="utf-8")
 
     # The 30-pair fixture is sampled from the same run, so the pairs Eileen judges are
-    # the pairs the threshold decision is actually about.
+    # the pairs the threshold decision is actually about - but only until she has judged
+    # them. Re-sampling after that would silently void an audit that took her twenty
+    # minutes: the labels are keyed by pair id, and those ids would point at new pairs.
+    rebuild_fixture = not (VALIDATION / "pair-labels.json").exists()
+    if not rebuild_fixture:
+        print("pair-labels.json exists - leaving label.html and label-pairs.json alone")
     for_labels = pd.concat([
         netflix[netflix.score.notna()].assign(
             left=lambda d: d.left_raw, right=lambda d: d.right_raw,
@@ -173,8 +178,8 @@ def main():
             left=lambda d: d.example_title, right=lambda d: d.imdb_key,
             left_source="Netflix engagement report", right_source="IMDb"),
     ], ignore_index=True).dropna(subset=["left", "right"])
-    pairs = label_pairs.sample_pairs(for_labels)
-    label_pairs.build(pairs)
+    if rebuild_fixture:
+        label_pairs.build(label_pairs.sample_pairs(for_labels))
 
     report = build(netflix, imdb, index_stats)
     (VALIDATION / "match-report.md").write_text(report, encoding="utf-8")

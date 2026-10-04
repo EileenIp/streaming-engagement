@@ -64,10 +64,75 @@ Both can be switched off individually in `match_imdb.RUNGS`.
 | — TV | 8,748 | 7,425 | 84.9% |
 | share of reported hours matched | | | 98.7% |
 
-## Still outstanding
+## Still outstanding at the time
 
-The 30-pair fixture in `label.html` has not been labelled yet. Until it is,
-`test_threshold_agrees_with_the_hand_labelled_pairs` skips, and 88 rests on the
-band-by-band reading above rather than on pair-by-pair ground truth. The pairs
-were sampled across score bands and the page does not show the score or what the
-pipeline decided, so the labels stay independent of it.
+The 30-pair fixture was unlabelled when this was written, so 88 rested on the
+band-by-band reading above rather than on pair-by-pair ground truth. That was
+settled on 2026-10-04 — see the section below, which is what moved the threshold
+to 87.
+
+---
+
+## The hand-labelled fixture — Eileen, 2026-10-04
+
+Eileen labelled 29 of the 30 sampled pairs in `label.html` (p12, *When Cousins
+Marry* against *my swedish cousins*, was left unanswered). The page showed two
+names and the source each came from — never the score, never what the pipeline
+had decided — so the labels are independent of the threshold they are used to
+judge. 19 same, 10 different.
+
+**Threshold moved from 88 to 87.** Disagreements with her labels, counted over
+the 29 she judged:
+
+| threshold | accepted but different | rejected but same | total |
+|---|---|---|---|
+| 83 | 4 | 1 | 5 |
+| 85 | 3 | 2 | 5 |
+| **87** | **2** | **1** | **3** |
+| 88 | 2 | 2 | 4 |
+| 90 | 1 | 5 | 6 |
+| 95 | 0 | 10 | 10 |
+
+87 is where her answers put it, and `test_the_threshold_matches_eileens_hand_labelled_pairs`
+now holds the constant there: it fails if any threshold between 70 and 100 would
+disagree with her less often. It also fails if any pair scoring 95 or above turns
+out not to be a match — whatever the error rate is, the confident end has to be clean.
+
+### What the audit found that the threshold could not fix
+
+**One disagreement was a missing rung, not a bad threshold.** She called
+`Tughlaq Durbar (Telugu)` and `tughlaq durbar` the same film; it scored 80.0 and
+was rejected. The `qualifier_dropped` rung exists for exactly that shape, but it
+was restricted to TV, so 153 film titles carrying a language qualifier — almost
+all Indian-language versions — could never reach it. The rung now applies to a
+film when it has a published year or a multi-word name, which keeps
+`Leo (Hindi) (2023)` and blocks `Bro (Hindi)` from becoming the key `bro`.
+**82 titles newly matched**, among them *Kalki 2898 AD (Hindi)*,
+*Baahubali 2: The Conclusion (Hindi Version)* and *Spider-Man: No Way Home
+(Extended Version)*. Overall matching went from 92.2% to 92.7%.
+
+**Two pairs the pipeline accepts are not matches, and no threshold excludes them:**
+
+| score | Netflix | IMDb |
+|---|---|---|
+| 90.9 | `Project Mc²: Part 2` | `project c24` |
+| 88.4 | `The Secret World of Lego` | `the secret world of` |
+
+Both are recorded rather than ruled out. A rule to catch them — one name being a
+truncation or near-prefix of the other — would also reject `Broken Hearts Gallery`
+against `the broken hearts gallery`, which she labelled a match. **So the fuzzy
+rung's measured error rate is about 2 in 29 audited pairs, and that is stated
+rather than engineered away.**
+
+**Two remaining rejections are translation variants**, which string distance
+cannot reach: `Crayon Shin-chan the Movie: Action Kamen vs. Leotard Devil`
+against `crayon shin chan action mask vs leotard devil` (83.2 — *Kamen* and
+*mask* are the same word in two languages), and the Doraemon film at 87.5, which
+87 now accepts.
+
+**On the audit itself:** the recorded scores in `label-pairs.json` are the ones
+the pairs had when she judged them. The Tughlaq pair now matches on a rung
+instead of through fuzzy, so that score is history rather than current state —
+which is what an audit snapshot is. `match_report.py` refuses to re-sample the
+fixture once `pair-labels.json` exists, because the labels are keyed by pair id
+and re-sampling would silently point them at different pairs.

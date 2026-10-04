@@ -29,12 +29,12 @@ from rapidfuzz import fuzz, process
 
 from src import normalise
 
-# Set at Checkpoint 2 by Eileen on 2026-09-25, from the near-miss list: 88, because
-# the 88-90 band is mostly true matches (the Detective Conan and Doraemon film
-# families, where Netflix writes 'Detective Conan the Movie: X' and IMDb writes
-# 'Detective Conan X') while the 85-88 band is genuinely mixed. The reasoning and the
-# pairs it correctly rejects are in data/validation/checkpoint2-threshold.md.
-FUZZY_THRESHOLD = 88.0
+# Set at Checkpoint 2 by Eileen on 2026-09-25 at 88, from reading the near-miss list by
+# band, and moved to 87 on 2026-10-04 once she had hand-labelled 30 pairs: at 87 the
+# pipeline disagrees with her on 3 of the 29 she judged, at 88 on 4. The pairs, the
+# disagreements and what each threshold would cost are in
+# data/validation/checkpoint2-threshold.md.
+FUZZY_THRESHOLD = 87.0
 STAGES = ["exact", "alternate", "year", "season_equiv", "fuzzy"]
 
 # A first-and-only season, written three ways. Treated as interchangeable at the
