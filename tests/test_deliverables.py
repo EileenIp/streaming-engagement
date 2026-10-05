@@ -72,3 +72,26 @@ def test_the_dashboard_is_self_contained_and_publishable():
     assert data["coverage"]["shown"] > 1000
     assert all(g["delivery"] is not None for g in data["genre_delivery"])
     assert DASHBOARD.stat().st_size < 1_500_000, "a page this size stops being a link you send"
+
+
+def test_the_test_count_the_deliverables_claim_is_the_real_one():
+    """Every deliverable states how many tests back it. That number went stale twice:
+    once at 74 and once at 75, while the suite grew to more. Counting it here is the
+    only way the claim stays true without someone remembering to update three files."""
+    import re
+    import subprocess
+    import sys
+
+    out = subprocess.run([sys.executable, "-m", "pytest", "--collect-only", "-q",
+                          "-p", "no:cacheprovider", str(config.ROOT / "tests")],
+                         capture_output=True, text=True, cwd=config.ROOT).stdout
+    match = re.search(r"(\d+) tests? collected", out)
+    assert match, f"could not read the collected count from pytest:\n{out[-400:]}"
+    actual = int(match.group(1))
+
+    for path in [config.ROOT / "README.md",
+                 config.ROOT / "deliverables" / "streaming-engagement-report.md",
+                 config.ROOT / "scripts" / "build_deck.js"]:
+        claimed = {int(n) for n in re.findall(r"(\d+) tests", path.read_text(encoding="utf-8"))}
+        assert claimed, f"{path.name} no longer states a test count"
+        assert claimed == {actual}, f"{path.name} claims {sorted(claimed)} tests; there are {actual}"

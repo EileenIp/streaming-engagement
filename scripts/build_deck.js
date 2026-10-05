@@ -351,7 +351,7 @@ function stat(slide, { x, y, w, value, label, colour = TEAL }) {
        color: "C9CDD2", paraSpaceAfter: 10 });
   s.addText("None of the three is public. That is why the strongest finding here is framed as a measurement, not an explanation.",
     { x: M, y: 3.55, w: 8.4, h: 0.5, isTextBox: true, margin: 0, fontFace: BODY, fontSize: 13, color: MINT });
-  s.addText("Reproducible end to end: python -m src.match_report · src.model · src.analysis · src.dashboard. 75 tests. IMDb data used under its non-commercial terms. Interpretation drafted by the agent, 2026-09-27; the checkpoint decisions are Eileen's and are recorded in data/validation/.",
+  s.addText("Reproducible end to end: python -m src.match_report · src.model · src.analysis · src.dashboard. 82 tests. IMDb data used under its non-commercial terms. Interpretation drafted by the agent, 2026-09-27; the checkpoint decisions are Eileen's and are recorded in data/validation/.",
     { x: M, y: 4.45, w: 8.6, h: 0.7, isTextBox: true, margin: 0, fontFace: BODY, fontSize: 10, color: MUTED });
 }
 

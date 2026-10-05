@@ -91,10 +91,21 @@ Estimate A$20–35. The entity-resolution phase is where an agent can loop — i
 
 ## Definition of done
 
-- [ ] Four real sources ingested with manifest + schema validation
-- [ ] Match report with rates, threshold reasoning, and the 30-pair hand-labelled fixture passing
-- [ ] Star schema documented with a diagram
-- [ ] Headline metric defined and defended in `NOTES.md`
-- [ ] `pytest` green
-- [ ] Four deliverables; case study with real numbers only
-- [ ] Rehearsed answers: why this threshold, what breaks when the next report drops, why a star schema, what a second platform would change
+- [x] Four real sources ingested with manifest + schema validation — Google Trends
+      swapped for Wikipedia pageviews at Checkpoint 0; every loader verifies the
+      download checksum and refuses a file whose columns changed
+- [x] Match report with rates, threshold reasoning, and the 30-pair hand-labelled
+      fixture passing — `data/validation/match-report.md`, threshold 87 set by the
+      fixture, and the test fails if any threshold 70–100 fits Eileen's labels better
+- [x] Star schema documented with a diagram — the ER diagram in `README.md`
+- [ ] **Headline metric defined and defended in `NOTES.md`** — the only box left.
+      Defined and defended in `data/validation/checkpoint3-metrics.md` (hours per week
+      available, with Top 10 longevity beside it, and an eight-week floor as part of
+      the definition), but this spec reserves `NOTES.md` for Eileen, so it stays open
+      until she writes it or decides the checkpoint file counts
+- [x] `pytest` green — 81 tests, none skipped
+- [x] Four deliverables; case study with real numbers only — dashboard, report
+      (`.md` + `.docx`), deck, and the site case study, which is live
+- [ ] **Rehearsed answers:** why this threshold, what breaks when the next report
+      drops, why a star schema, what a second platform would change — the material for
+      all four is in the repo; rehearsing them is Eileen's

@@ -292,6 +292,6 @@ and make sure you would defend them as your own.**
 ---
 
 *Built from public data. Reproducible end to end: `python -m src.match_report`,
-`python -m src.model`, `python -m src.analysis`, `python -m src.dashboard`. 74 tests.
+`python -m src.model`, `python -m src.analysis`, `python -m src.dashboard`. 82 tests.
 IMDb data is used under its non-commercial terms; no per-title IMDb ratings or vote
 counts are published in the deliverables.*

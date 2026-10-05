@@ -161,7 +161,7 @@ python -m src.fetch_demand                     # Wikipedia pageviews (slow: rate
 python -m src.analysis                         # the three findings, with intervals
 python -m src.dashboard                        # dashboard/index.html
 python -m src.deck                             # deliverables deck (needs node + pptxgenjs)
-python -m pytest -q                            # 74 tests
+python -m pytest -q                            # 82 tests
 ```
 
 Raw data is gitignored; `data/manifest.json` records every download's URL, time, size and
